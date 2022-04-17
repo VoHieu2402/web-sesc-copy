@@ -75,6 +75,7 @@ nav img{
   background: transparent;
   position: relative;
   cursor:pointer;
+  margin-top: 1%;
 }
 .hero-btn:hover{
   border: 1px solid #23854f;
@@ -136,7 +137,7 @@ p{
 }
 .training-col{
   flex-basis: 31%;
-  background: #87d2c0;
+  background: rgba(103, 207, 158, 0.9);
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
@@ -202,7 +203,7 @@ h3{
   color: #fff;
   bottom: 40%;
 }
-/*-------FSC----*/
+/*-------Department----*/
 .department{
   width: 80%;
   margin: auto;
@@ -226,6 +227,43 @@ h3{
   margin-bottom: 15px;
   text-align: center;
 }
+/*-------CTA----*/
+.cta{
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(SeSC/books.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.cta h1{
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 0;
+}
+@media(max-width: 700px){
+  .cta h1{
+    font-size: 24px;
+  }
+}
+/*-------footer----*/
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+
+
+
+
 
 
 
