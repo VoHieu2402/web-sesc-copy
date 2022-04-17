@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Securities Studying Club - Never Back Down</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class ="header">
+  <nav>
+    <a href="https://www.facebook.com/CaulacboChungKhoanSeSC"><img src="SeSC/Logo_small_trans.png"></a>
+    <div class="nav-links" id="navLinks">
+      <ion-icon class="fa fa-times" name="close-outline" onclick="hideMenu()"></ion-icon>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">FSC</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">TOOLS</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <ion-icon class="fa fa-bars" name="menu-outline" onclick="showMenu()"></ion-icon>
+  </nav>
+  <div class="text-box">
+    <h1>Securities Studying Club</h1>
+    <p>Knowing how to invest has become so important now than ever before to reach financial independence and more importantly,<br> to be able to not lose what you have worked so hard for.</p>
+    <a href="https://www.facebook.com/CaulacboChungKhoanSeSC" class="hero-btn">Visit us to know more</a>
+  </div>
+</section>
+<!--------Next Section-------------------------->
+<section class ="Activity">
+  <h1>Our training sessions</h1>
+  <p>Internal training sessions</p>
+
+</section>
+<!--------Javacrpt for Toggle Mobile Menu------->
+  <script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+      navLinks.style.right="0";
+    }
+    function hideMenu(){
+      navLinks.style.right="-200px";
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
