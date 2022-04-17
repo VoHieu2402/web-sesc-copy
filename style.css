@@ -202,9 +202,30 @@ h3{
   color: #fff;
   bottom: 40%;
 }
-
-
-
+/*-------FSC----*/
+.department{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.department-col{
+  flex-basis: auto;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.department-col img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.department-col h3{
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+}
 
 
 
