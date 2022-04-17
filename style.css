@@ -253,14 +253,26 @@ h3{
   width: 100%;
   text-align: center;
   padding: 30px 0;
+  background-color: rgba(2, 59, 30, 0.7);
 }
 .footer h4{
   margin-bottom: 25px;
   margin-top: 20px;
   font-weight: 600;
+  color:beige;
 }
-
-
+.footer p{
+  color:beige;
+}
+.icons .fa{
+  color:#03a54c;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.fa{
+  color: #03a54c;
+}
 
 
 
