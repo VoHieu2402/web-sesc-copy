@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Securities Studying Club - Never Back Down</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--------Header----------------->
+<section class ="sub-header">
+  <nav>
+    <a href="https://www.facebook.com/CaulacboChungKhoanSeSC"><img src="SeSC/Logo_small_trans.png" target="_blank"></a>
+    <div class="nav-links" id="navLinks">
+      <ion-icon class="fa fa-times" name="close-outline" onclick="hideMenu()"></ion-icon>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="fsc.html">FSC</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <!---<li><a href="#">TOOLS</a></li>--->
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <ion-icon class="fa fa-bars" name="menu-outline" onclick="showMenu()"></ion-icon>
+  </nav>
+  <div class="text-box">
+    <h1>Contact Us</h1>
+</section>
+<!--------contact us----------------->
+<section class="location">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.057498651273!2d106.71086331411678!3d10.8069082615871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528a33d45ec4b%3A0xbc43c25806fdd0b9!2sForeign%20Trade%20University%20-%20Campus%20II%20in%20Ho%20Chi%20Minh%20City!5e0!3m2!1sen!2s!4v1650535884234!5m2!1sen!2s" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <ion-icon name="home"></ion-icon>
+        <span>
+          <h5>15 D5 street, Ward 25</h5>
+          <p>Binh Thanh, Ho Chi Minh City, Vietnam</p>
+        </span>
+      </div>
+      <div>
+        <ion-icon name="call"></ion-icon>
+        <span>
+          <h5>+84 911408383</h5>
+          <p>Monday to Saturday, 7AM to 6PM</p>
+        </span>
+      </div>
+      <div>
+        <ion-icon name="mail"></ion-icon>
+        <span>
+          <h5>info.sesc@gmail.com</h5>
+          <p>Email us your query</p>
+        </span>
+      </div>
+    </div>
+    <div class="contact-col">
+      <form action="form-handler.php" method="post">
+        <input name="name" type="text" placeholder="Enter your name" required>
+        <input name="email" type="email" placeholder="Enter your email address" required>
+        <input name="subject" type="text" placeholder="Enter your subject" required>
+        <textarea name="message" rows="8" placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn green-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!--------Footer--------------->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Established on April 1, 2010, SeSC (Securities Studying Club) is currently the only club at FTU2 operating in the field of finance and securities.<br> This is an environment for students with the same passion to learn and share knowledge with each other.</p>
+  <div class="icons">
+    <a href="https://www.facebook.com/CaulacboChungKhoanSeSC" target="_blank"><ion-icon class="fa" name="logo-facebook"></ion-icon></a>
+    <a href="https://www.linkedin.com/company/sesc-ftu2/mycompany/" target="_blank"><ion-icon class="fa" name="logo-linkedin"></ion-icon></a>
+    <a href="https://www.tiktok.com/@fsc.10" target="_blank"><ion-icon class="fa" name="logo-tiktok"></ion-icon></a></ion-icon>
+  </div>
+  <p>Powered by  <ion-icon class="fa" name="heart-outline"></ion-icon>  from SeSC</p>
+</section>
+<!--------Javacrpt------->
+  <script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+      navLinks.style.right="0";
+    }
+    function hideMenu(){
+      navLinks.style.right="-200px";
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
