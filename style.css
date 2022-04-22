@@ -205,6 +205,11 @@ h3{
   color: #fff;
   bottom: 40%;
 }
+@media(max-width: 700px){
+  .layer:hover{
+    padding-top: 10%;
+  }
+}
 /*-------Department----*/
 .department{
   width: 80%;
