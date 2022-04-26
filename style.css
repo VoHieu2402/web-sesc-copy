@@ -97,6 +97,7 @@ nav img{
   position: relative;
   cursor:pointer;
   margin-top: 1%;
+  border-radius: 1mm;
 }
 .hero-btn:hover{
   border: 1px solid #23854f;
