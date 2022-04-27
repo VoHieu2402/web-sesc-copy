@@ -33,7 +33,7 @@ nav img{
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),
-  url(SeSC/green-building.jpg);
+  url(/SeSC/green-building.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -62,7 +62,7 @@ nav img{
   content: '';
   width: 0%;
   height: 2px;
-  background: #03a54c;
+  background:#03a54c;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -100,8 +100,8 @@ nav img{
   border-radius: 1mm;
 }
 .hero-btn:hover{
-  border: 1px solid #23854f;
-  background: #23854f;
+  border: 1px solid #03a54c;
+  background:#03a54c;
   transition: 1s;
 }
 nav .fa{
@@ -147,7 +147,7 @@ nav .fa{
 }
 .training-col{
   flex-basis: 31%;
-  background: rgb(199, 255, 221);
+  background: #6feca7;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
@@ -249,7 +249,7 @@ nav .fa{
 .cta{
   margin: 100px auto;
   width: 80%;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(SeSC/books.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/SeSC/books.jpg);
   background-position: center;
   border-radius: 10px;
   text-align: center;
@@ -295,7 +295,7 @@ nav .fa{
 .sub-header{
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(SeSC/green-building.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/SeSC/green-building.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -470,18 +470,13 @@ nav .fa{
 }
 /*-------Preloader----------*/
 #preloader{
-  background: rgb(255, 255, 255) url(SeSC/preloader.gif) no-repeat center center;
+  background: rgb(255, 255, 255) url(/SeSC/preloader.gif) no-repeat center center;
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 9999;
 }
-/*-------Dark theme----------*/
-#dark-theme{
-  width: 30px;
-  cursor: pointer;
-  position: absolute;
-}
+
 
 
 
