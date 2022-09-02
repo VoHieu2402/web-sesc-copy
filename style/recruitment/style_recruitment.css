@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+  scroll-behavior: smooth;
+}
+
+/* ----- Header & NavMenu ----- */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header .navbar-brand img {
+  width: 70%;
+}
+
+.header button.navbar-toggler {
+  z-index: 1000 !important;
+  background-color: green;
+}
+
+.header button.navbar-toggler span {
+  color: white !important;
+}
+
+.header .navMenu ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header .navMenu ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #03a54c;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.header .navMenu ul li:hover::after {
+  width: 100%;
+}
+
+.header .navMenu ul li a {
+  color: beige;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* ----- Carousel ----- */
+.carousel {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/SeSC/green-building.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: beige;
+}
+
+.carousel h2 {
+  margin-top: 170px;
+}
+
+/* sticky effect */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background-color: green;
+  height: 15vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.sticky .navMenu ul li::after {
+  background-color: beige;
+}
+
+.sticky .container {
+  height: 100%;
+}
+
+.sticky .container .navbar {
+  height: 100%;
+}

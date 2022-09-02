@@ -3,10 +3,16 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Securities Studying Club - Never Back Down</title>
-  <link rel="stylesheet" href="style/style.css">
+  
+  <!-- gg fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- css files -->
+  <link rel="stylesheet" href="/style/home/style.css">
+  <link rel="stylesheet" href="/style/blog/style_blog.css">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XE0JP45WDF"></script>
   <script>
@@ -21,17 +27,17 @@
 <!--------Header----------------->
 <section class ="sub-header">
   <nav>
-    <a href="index.html"><img src="SeSC/Logo_small_trans.png" target="_blank"></a>
+    <a href="index.html"><img src="/SeSC/Logo_small_trans.png" target="_blank"></a>
     <div class="nav-links" id="navLinks">
       <ion-icon class="fa fa-times" name="close-outline" onclick="hideMenu()"></ion-icon>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT US</a></li>
-          <li><a href="fsc.html">FSC</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <!---<li><a href="#">TOOLS</a></li>--->
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+      <ul>
+        <li class="nav"><a href="/html/home/index.html">HOME</a></li>
+        <li class="nav"><a href="/html/aboutUs/about.html">ABOUT US</a></li>
+        <li class="nav"><a href="/html/fsc/fsc.html">FSC</a></li>
+        <li class="nav"><a href="/html/blog/blog.html">BLOG</a></li>
+        <li class="nav"><a href="/html/recruitment/recruitment.html">RECRUITMENT</a></li> 
+        <li class="nav"><a href="/html/contact/contact.html">CONTACT</a></li>   
+      </ul>   
     </div>
     <ion-icon class="fa fa-bars" name="menu-outline" onclick="showMenu()"></ion-icon>
   </nav>
@@ -42,7 +48,7 @@
 <section class="blog-content">
   <div class="row">
     <div class="blog-left">
-      <img src="SeSC/Finance-1.jpg">
+      <img src="/SeSC/Finance-1.jpg">
       <h2>Analytics & Reports</h2>
       <p>We investigate the equity market timing hypothesis of capital structure in the case of Vietnam. The two questions that we aim to answer in this paper are: Whether or not Vietnamese listed non-financial firms’ capital structures are affected by equity market timing? If they are indeed affected, does the effect last throughout the years, or is it only a short-term effect? The results suggest that capital structure is the cumulative outcomes of past market timing attempts for Vietnamese non-financial firms. Our findings are consistent with the theory proposed by Baker & Wurgler (2002), the pioneering research whose model have been widely adopted in numerous studies around the world in this field.</p>
       <br>
