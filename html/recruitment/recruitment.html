@@ -93,9 +93,73 @@
         <h2>TUYỂN NHÂN SỰ</h2>
       </div>
     </section>
-    <div class="test" style="height: 2000px">
-      <h2>Võ Minh Hiếu</h2>
-    </div>
+    <section class="intro-quote">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 left">
+            <h2>Never Back Down</h2>
+            <p>
+              Tuổi trẻ là một vòng xoay mà không phải ai cũng đủ bản lĩnh để rời
+              khỏi bề mặt bằng phẳng. Em sẽ để thanh xuân mình mãi là một vòng
+              tròn khép kín hay chọn bứt phá khỏi sự nhàm chán của những vòng
+              lặp và tiến lên tới một em mới mẻ, trọn vẹn hơn? Hãy để
+              <span class="highlight-text">SeSC</span> đi cùng em trong hành
+              trình bứt phá, hoàn thiện và phát triển –
+              <span class="highlight-text">Out the Cycle, Up the Spiral.</span>
+              Sự lựa chọn nằm ở em!
+            </p>
+            <button type="button" class="btn btn-success">ĐĂNG KÝ NGAY</button>
+          </div>
+          <div class="col-12 col-md-6 right">
+            <img src="/SeSC/sesc_quote.jpg" alt="SeSC Quote" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="count-timer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="colLayer">
+              <div class="item">
+                <h1>TUYỂN NHÂN SỰ</h1>
+                <h2>DEADLINE DAY</h2>
+                <div class="count-clock row">
+                  <div class="col-3 colCount">
+                    <div class="countContainer">
+                      <span id="day">10</span>
+                      <p>NGÀY</p>
+                    </div>
+                  </div>
+                  <div class="col-3 colCount">
+                    <div class="countContainer">
+                      <span id="hour">20</span>
+                      <p>GIỜ</p>
+                    </div>
+                  </div>
+                  <div class="col-3 colCount">
+                    <div class="countContainer">
+                      <span id="min">10</span>
+                      <p>PHÚT</p>
+                    </div>
+                  </div>
+                  <div class="col-3 colCount">
+                    <div class="countContainer">
+                      <span id="second">15</span>
+                      <p>GIÂY</p>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-success">
+                  ĐĂNG KÝ NGAY
+                </button>
+                <div class="overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -113,18 +177,27 @@
     <script>
       var header = document.querySelector("body > header");
       var carousel = document.querySelector("body > div");
+      var imgLogo = document.querySelector(
+        "body > header > div > nav > div > a > img"
+      );
 
       window.onscroll = function () {
         if (window.pageYOffset >= 300) {
           header.classList.add("sticky");
           document.querySelector("body > section > div > h2").style.display =
             "none";
+          imgLogo.src = "/SeSC/Logo_small.jpg";
+          imgLogo.style = "width: 50%; border-radius: 100px;";
         } else {
           header.classList.remove("sticky");
           document.querySelector("body > section > div > h2").style.display =
             "block";
+          imgLogo.src = "/SeSC/Logo_small_trans.png";
+          imgLogo.style = "width: 70%;";
         }
       };
     </script>
+
+    <script src="/script/recruit.js"></script>
   </body>
 </html>

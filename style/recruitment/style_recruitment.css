@@ -13,6 +13,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
+  background: transparent;
 }
 
 .header .navbar-brand img {
@@ -53,6 +54,12 @@
   font-size: 15px;
 }
 
+/* responsive */
+.header .show {
+  background-color: green;
+  transition: 0.1s;
+}
+
 /* ----- Carousel ----- */
 .carousel {
   height: 50vh;
@@ -66,7 +73,21 @@
 }
 
 .carousel h2 {
-  margin-top: 170px;
+  padding-top: 170px;
+}
+
+@media (max-width: 992px) {
+  .header .navbar-brand {
+    transform: translateX(260px);
+    text-align: center;
+  }
+  .carousel h2 {
+    padding-top: 110px;
+  }
+
+  .carousel {
+    height: 40vh;
+  }
 }
 
 /* sticky effect */
@@ -91,4 +112,143 @@
 
 .sticky .container .navbar {
   height: 100%;
+}
+
+/* ----- SeSC Quote ----- */
+.intro-quote {
+  padding-top: 200px;
+}
+
+.intro-quote .right {
+  padding: 0 50px;
+}
+
+.intro-quote .right img {
+  width: 100%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.intro-quote .left {
+  text-align: center;
+}
+
+.intro-quote .left h2 {
+  margin-bottom: 20px;
+  font-style: italic;
+  color: green;
+  font-weight: 600;
+}
+
+.intro-quote .left p {
+  line-height: 35px;
+  text-align: left;
+}
+
+.intro-quote .left p span {
+  color: green;
+  font-weight: 600;
+}
+
+.intro-quote .left button {
+  background-color: green !important;
+  transition: 0.3s;
+}
+
+.intro-quote .left button:hover {
+  background-color: white !important;
+  color: green;
+}
+
+/* ----- Count Timer ----- */
+.count-timer {
+  background-image: url(/SeSC/background_tns_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 200px;
+  text-align: center;
+  z-index: 5;
+}
+
+.count-timer .colLayer {
+  position: relative;
+}
+
+/* .count-timer .colLayer::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 0;
+} */
+
+.count-timer .item {
+  margin-top: 200px;
+  padding: 50px 20px;
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.count-timer .item h1 {
+  font-size: 33px;
+  z-index: 100;
+  text-align: center;
+  font-weight: 900;
+}
+
+.count-timer .item h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 900;
+  margin: 20px 0px 40px 0px;
+}
+
+/* .count-timer .item .count-clock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+} */
+
+.count-timer .item .count-clock .colCount {
+  padding: 10px;
+  text-align: center;
+}
+
+.count-timer .item .count-clock .colCount .countContainer {
+  border-radius: 10px;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+
+.count-timer .item .count-clock .colCount .countContainer span {
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.count-timer .item .count-clock .colCount .countContainer p {
+  margin-top: 10px;
+}
+
+.count-timer .item button {
+  background-color: green !important;
+  transition: 0.3s;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+.count-timer .item button:hover {
+  background-color: white !important;
+  color: green;
 }
