@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Sep 19, 2022 22:15:00").getTime();
+var countDownDate = new Date("Nov 7, 2022 23:59:59").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -28,3 +28,8 @@ var x = setInterval(function() {
 //     document.getElementById("demo").innerHTML = "EXPIRED";
 //   }
 }, 1000);
+
+$(".num").countUp({
+  time: 2000,
+  delay: 10,
+});

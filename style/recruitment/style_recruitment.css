@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -159,96 +159,342 @@
   color: green;
 }
 
-/* ----- Count Timer ----- */
-.count-timer {
-  background-image: url(/SeSC/background_tns_1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  margin-top: 200px;
+/* ----- Number ----- */
+.numbers {
+  margin: 200px 0px;
+  background-image: url("/SeSC/[BCM]\ Background.png");
   text-align: center;
-  z-index: 5;
+  padding: 60px 0px;
+  background-attachment: fixed;
+  background-position: right;
 }
 
-.count-timer .colLayer {
-  position: relative;
+/* .numbers .heading {
+  margin-bottom: 40px;
 }
 
-/* .count-timer .colLayer::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  background-color: aliceblue;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-  z-index: 0;
+.numbers .heading h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #daf2da;
 } */
 
-.count-timer .item {
-  margin-top: 200px;
-  padding: 50px 20px;
-  height: 100%;
-  width: 100%;
-  background-color: aliceblue;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-  z-index: 0;
-}
-
-.count-timer .item h1 {
-  font-size: 33px;
-  z-index: 100;
-  text-align: center;
+.numbers .number h3 {
+  font-size: 70px;
   font-weight: 900;
+  color: #ccff33;
 }
 
-.count-timer .item h2 {
-  font-size: 20px;
+.numbers .number p {
+  font-size: 25px;
+  font-weight: 600;
+  color: #daf2da;
+}
+
+/* ----- Concept TNS ----- */
+.main-concept .heading {
   text-align: center;
-  font-weight: 900;
-  margin: 20px 0px 40px 0px;
+  margin-bottom: 50px;
 }
 
-/* .count-timer .item .count-clock {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-} */
-
-.count-timer .item .count-clock .colCount {
-  padding: 10px;
-  text-align: center;
+.main-concept .heading h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: green;
 }
 
-.count-timer .item .count-clock .colCount .countContainer {
-  border-radius: 10px;
-  background-color: antiquewhite;
-  padding: 10px;
-}
-
-.count-timer .item .count-clock .colCount .countContainer span {
-  font-size: 55px;
+.main-concept .heading h3 {
+  font-size: 50px;
   font-weight: 800;
 }
 
-.count-timer .item .count-clock .colCount .countContainer p {
-  margin-top: 10px;
+.main-concept .description {
+  margin: 50px 0px;
 }
 
-.count-timer .item button {
+.main-concept .description #ichimoku {
+  color: green;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.main-concept .body .right {
+  padding: 50px 0px 0px 100px;
+}
+
+.main-concept .body .item {
+  margin-bottom: 25px;
+  position: relative;
+  transition: all 0.3s;
+  animation-duration: 2s;
+}
+
+.main-concept .body .item:hover {
+  transform: scale(1.1);
+}
+
+.main-concept .body .item2 {
+  margin-left: 40px;
+}
+
+.main-concept .body .item .order {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.main-concept .body .item .order span {
+  color: beige;
+  font-size: 20px;
+  /* padding: 20px; */
+  background-color: green;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 32px;
+}
+
+.main-concept .body .item .content {
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.main-concept .body .item .content h2 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: green;
+}
+
+.main-concept .body .left {
+  position: relative;
+  animation-duration: 2s;
+  border-radius: 5px;
+}
+
+.main-concept .body .left img.main-img {
+  width: 100%;
+  border-radius: 20px;
+  animation-duration: 2s;
+  position: relative;
+  z-index: 5;
+}
+
+.main-concept .body .left .background {
+  height: 100%;
+  width: 90%;
+  position: absolute;
+  top: -5px;
+  left: 12px;
+  background-image: url("/SeSC/chart-vnindex.PNG");
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  z-index: 0;
+  border-radius: 5px;
+}
+
+.main-concept .body .left .usdt {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: absolute;
+  bottom: 20px;
+  left: -20px;
+  width: 25%;
+  z-index: 10;
+}
+
+.main-concept button {
+  margin-top: 50px;
   background-color: green !important;
   transition: 0.3s;
-  margin-top: 100px;
-  border-radius: 10px;
+  border-radius: 50px;
+  padding: 10px 30px;
 }
 
-.count-timer .item button:hover {
+.main-concept button a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.main-concept button:hover {
   background-color: white !important;
+}
+
+.main-concept button:hover a {
   color: green;
+}
+
+/* ----- Count Timer ----- */
+.count-timer {
+  margin: 100px 0px;
+  padding: 100px 0px;
+  background-color: #2c2c2d;
+  text-align: center;
+}
+
+.count-timer .heading h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.count-timer .heading p {
+  color: #03a54c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.count-timer .clock {
+  margin-top: 50px;
+}
+
+.count-timer .clock .item .item-container {
+  text-align: center;
+  background-color: #fdfdfd1a;
+  padding: 25px 0px 20px 0px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ffffff47;
+  border-radius: 5px 5px px 5px 5px;
+}
+
+.count-timer .clock .item h3 {
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.count-timer .clock .item p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #03a54c;
+}
+
+/* ----- Job Description ----- */
+.jd-departments {
+  margin: 100px 0px;
+}
+.jd-departments .heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.jd-departments .heading h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: green;
+}
+
+.jd-departments .heading h3 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.jd-departments .tab-dpt .nav-link {
+  font-weight: 500;
+}
+
+.jd-departments .tab-dpt .nav-link.active {
+  background-color: green;
+  color: white !important;
+  border: green;
+}
+
+.jd-departments .tab-dpt .tab-content {
+  margin-top: 50px;
+}
+
+.jd-departments .tab-dpt .tab-content .tab-pane img {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.jd-departments .tab-pane .text-content .item {
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.jd-departments .tab-pane .text-content .item h2 {
+  font-weight: 600;
+  color: #03a54c;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.jd-departments .tab-pane .text-content .item .text i {
+  color: #03a54c;
+}
+
+.jd-departments .tab-pane .text-content .item .text p {
+  text-align: left;
+}
+
+.jd-departments .tab-dpt button.apply {
+  margin-top: 50px;
+  background-color: #03a54c !important;
+  transition: 0.3s;
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+
+.jd-departments .tab-dpt button.apply a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.jd-departments .tab-dpt button.apply:hover {
+  background-color: white !important;
+}
+
+.jd-departments .tab-dpt button.apply:hover a {
+  color: #03a54c;
+}
+
+/*-------footer----*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: rgba(15, 16, 15, 0.906);
+}
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: beige;
+}
+.footer p {
+  color: beige;
+  font-size: 14px;
+}
+.icons a {
+  color: #03a54c;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 20px;
+}
+
+.icons a:hover {
+  color: beige;
+}
+
+.icons {
+  margin-bottom: 20px;
+}
+
+.footer p i {
+  color: #03a54c;
 }
