@@ -159,6 +159,16 @@
   color: green;
 }
 
+.intro-quote .left button a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.intro-quote .left button:hover a {
+  color: green;
+}
+
 /* ----- Number ----- */
 .numbers {
   margin: 200px 0px;
