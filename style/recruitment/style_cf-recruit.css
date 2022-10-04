@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.thank-img {
+  width: 30%;
+  animation: swinging ease-in-out 2s infinite alternate;
+}
+@keyframes swinging {
+  0% {
+    transform: rotate(-8deg);
+  }
+
+  100% {
+    transform: rotate(8deg);
+  }
+}
+
+p {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+p i {
+  color: #03a54c;
+}
+
+button.backTo {
+  margin-top: 50px;
+  background-color: #03a54c !important;
+  color: white !important;
+  transition: 0.3s;
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+
+button.backTo:hover {
+  background-color: white !important;
+  color: #03a54c !important;
+}

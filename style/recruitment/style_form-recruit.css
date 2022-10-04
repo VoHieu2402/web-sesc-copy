@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  position: relative;
+}
+
 /* ----- Header & NavMenu ----- */
 .header {
   position: absolute;
@@ -100,6 +104,7 @@
   background-color: green;
   height: 15vh;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 1;
 }
 
 .sticky .navMenu ul li::after {
@@ -160,26 +165,23 @@
   color: gainsboro !important;
 }
 
+.noti-error {
+  display: none;
+  color: red;
+}
+
 .form .cauHoiPhanBan .tab-dpt button.submit {
   margin-top: 50px;
   background-color: #03a54c !important;
+  color: white !important;
   transition: 0.3s;
   border-radius: 50px;
   padding: 10px 30px;
 }
 
-.form .cauHoiPhanBan .tab-dpt button.submit a {
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
-
 .form .cauHoiPhanBan .tab-dpt button.submit:hover {
   background-color: white !important;
-}
-
-.form .cauHoiPhanBan .tab-dpt button.submit:hover a {
-  color: #03a54c;
+  color: #03a54c !important;
 }
 
 /*-------footer----*/
@@ -219,4 +221,51 @@
 
 .footer p i {
   color: #03a54c;
+}
+
+/* Overlay Modal */
+.overlayModal {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+/* loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid green;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  z-index: 101;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

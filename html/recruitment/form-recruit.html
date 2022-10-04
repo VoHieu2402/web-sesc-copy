@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Form TNS-SeSC</title>
+    <title>Form TNS SeSC</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -32,12 +32,6 @@
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-
-    <!-- animation css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
     <!-- css files -->
@@ -116,20 +110,32 @@
                     <div class="mb-3 col-6">
                         <label for="hoTen" class="form-label">Họ và tên</label>
                         <input type="text" class="form-control" id="hoTen" placeholder="Họ và Tên">
+                        <div class="noti-error" id="noti-hoTen">
+                          <p></p>
+                        </div>
                     </div>
                     <div class="mb-3 col-6">
                         <label for="ngaySinh" class="form-label">Ngày sinh</label>
                         <input type="date" class="form-control" id="ngaySinh">
+                        <div class="noti-error" id="noti-ngaySinh">
+                          <p></p>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="mb-3 col-4">
                         <label for="maSV" class="form-label">Mã SV</label>
                         <input type="text" class="form-control" id="maSV" placeholder="Mã Sinh viên">
+                        <div class="noti-error" id="noti-maSV">
+                          <p></p>
+                        </div>
                     </div>
                     <div class="mb-3 col-4">
                         <label for="lopSV" class="form-label">Lớp</label>
                         <input type="text" class="form-control" id="lopSV">
+                        <div class="noti-error" id="noti-lopSV">
+                          <p></p>
+                        </div>
                     </div>
                     <div class="mb-3 col-4">
                         <label for="gioiTinh" class="form-label">Giới Tính</label>
@@ -141,15 +147,15 @@
                                 </label>
                             </div>
                             <div class="form-check col-4">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="nữ" checked>
-                                <label class="form-check-label" for="nữ">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="nu" checked>
+                                <label class="form-check-label" for="nu">
                                   Nữ
                                 </label>
                             </div>
                             <div class="form-check col-4">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="lgbt+">
                                 <label class="form-check-label" for="lgbt+">
-                                  LGBT+
+                                  Khác
                                 </label>
                             </div>
                         </div>
@@ -159,50 +165,231 @@
                     <div class="mb-3 col-4">
                         <label for="sdt" class="form-label">Số điện thoại</label>
                         <input type="text" class="form-control" id="sdt">
+                        <div class="noti-error" id="noti-sdt">
+                          <p></p>
+                        </div>
                     </div>
                     <div class="mb-3 col-4">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email">
+                        <div class="noti-error" id="noti-email">
+                          <p></p>
+                        </div>
                     </div>
                     <div class="mb-3 col-4">
                         <label for="linkFb" class="form-label">Link Facebook</label>
                         <input type="text" class="form-control" id="linkFb">
+                        <div class="noti-error" id="noti-linkFb">
+                          <p></p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="cauHoiChung">
-                <h2>II) Câu Hỏi Chung</h2>
-                <div class="mb-3">
+                <h2>II) SỰ HIỂU BIẾT VỀ CÂU LẠC BỘ TÀI CHÍNH - CHỨNG KHOÁN SeSC</h2>
+                <div class="mb-4">
                     <label for="cauHoi1" class="mb-3">1. Bạn biết gì về CLB Tài chính - Chứng khoán SeSC?</label>
                     <textarea class="form-control" id="cauHoi1" style="height: 100px"></textarea>
+                    <div class="noti-error" id="noti-cauHoi1">
+                      <p></p>
+                    </div>
                 </div>
-                <div class="mb-3">
+                <div class="mb-5">
                     <label for="cauHoi2" class="mb-3">2. Bạn biết CLB Tài chính - Chứng khoán SeSC qua các kênh nào?</label>
-                    <textarea class="form-control" id="cauHoi2" style="height: 100px"></textarea>
+                    <select class="form-select" aria-label="Default select example" id="cauHoi2">
+                      <option selected>Trang fanpage của SeSC</option>
+                      <option value="Kênh tiktok của SeSC">Kênh tiktok của SeSC</option>
+                      <option value="Qua hội thảo Financial Pathway">Qua hội thảo Financial Pathway</option>
+                      <option value="Qua sự kiện Welcome K61">Qua sự kiện Welcome K61</option>
+                      <option value="Qua sự kiện Club Fair">Qua sự kiện Club Fair</option>
+                      <option value="Bạn bè, anh chị khoá trên giới thiệu">Bạn bè, anh chị khoá trên giới thiệu</option>
+                      <option value="Email marketing">Email marketing</option>
+                      <option value="Khác">Khác</option>
+                    </select>
+                    <div class="noti-error" id="noti-cauHoi2">
+                      <p></p>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="cauHoi3" class="mb-3">3. Điều gì khiến bạn nghĩ rằng mình phù hợp với SeSC?</label>
+                <div class="mb-4">
+                    <label for="cauHoi3" class="mb-3">3. Trong số 35 CLB - Đội - Nhóm của trường Đại học Ngoại thương CS2, vì sao bạn lại chọn SeSC là nơi cùng gắn bó trong quãng đời sinh viên?</label>
                     <textarea class="form-control" id="cauHoi3" style="height: 100px"></textarea>
+                    <div class="noti-error" id="noti-cauHoi3">
+                      <p></p>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="cauHoi4" class="mb-3">4. Bạn có thể đóng góp những gì cho sự phát triển của SeSC?</label>
+                <div class="mb-4">
+                    <label for="cauHoi4" class="mb-3">4. Bạn mong muốn nhận được những giá trị gì từ SeSC?</label>
                     <textarea class="form-control" id="cauHoi4" style="height: 100px"></textarea>
+                    <div class="noti-error" id="noti-cauHoi4">
+                      <p></p>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="cauHoi5" class="mb-3">5. Hãy nêu 3 điểm mạnh và 3 điểm yếu của bản thân. Bạn làm thế nào để khắc phục các điểm yếu đó.</label>
-                    <textarea class="form-control" id="cauHoi5" style="height: 100px"></textarea>
+                <div class="mb-4">
+                  <label for="cauHoi5" class="mb-3">5. Văn hóa gia đình là truyền thống được duy trì và phát triển qua các nhiệm kỳ của SeSC, bạn hiểu văn hóa gia đình là như thế nào?</label>
+                  <textarea class="form-control" id="cauHoi5" style="height: 100px"></textarea>
+                  <div class="noti-error" id="noti-cauHoi5">
+                    <p></p>
+                  </div>
+              </div>
+            </div>
+            <div class="khamPhaBanThan">
+              <h2>III) KHÁM PHÁ BẢN THÂN</h2>
+              <div class="mb-3">
+                  <label for="khamPha1" class="mb-3">1. Hãy cho SeSC 3 từ khoá miêu tả về tính cách của bạn. (Lưu ý: chỉ 3 từ khoá ngắn gọn thôi nhé)</label>
+                  <textarea class="form-control" id="khamPha1" style="height: 100px"></textarea>
+                  <div class="noti-error" id="noti-khamPha1">
+                    <p></p>
+                  </div>
+              </div>
+              <div class="mb-3">
+                <label for="khamPha2" class="mb-3">2. Hãy nêu 3 điểm mạnh của bạn. Bạn có nghĩ rằng 3 điểm mạnh đó sẽ có thể giúp bạn trở nên hoà hợp và gắn bó lâu dài cùng với SeSC  hay không?</label>
+                <textarea class="form-control" id="khamPha2" style="height: 100px"></textarea>
+                <div class="noti-error" id="noti-khamPha2">
+                  <p></p>
                 </div>
-                <div class="mb-3">
-                    <label for="cauHoi6" class="mb-3">6. Văn hóa gia đình là một điều không thể thiếu ở SeSC, bạn hiểu văn hóa gia đình là như thế nào và bản thân bạn dự định sẽ làm gì để phát triển văn hóa này?</label>
-                    <textarea class="form-control" id="cauHoi6" style="height: 100px"></textarea>
+              </div>
+              <div class="mb-3">
+                  <label for="khamPha3" class="mb-3">3. Hãy nêu 3 điểm yếu của bạn. Bạn có nghĩ rằng 3 điểm yếu đó sẽ trở thành những trở ngại lớn đối với bạn trong việc giao tiếp và làm việc hằng ngày với mọi người hay không?</label>
+                  <textarea class="form-control" id="khamPha3" style="height: 100px"></textarea>
+                  <div class="noti-error" id="noti-khamPha3">
+                    <p></p>
+                  </div>
+              </div>
+              <div class="mb-3">
+                <label for="characters" class="form-label">4. Chọn 1 lựa chọn phù hợp với bạn cho mỗi câu bên dưới:</label>
+                <div class="characters row">
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio" name="flexRadio1" id="teamwork" value="Làm việc teamwork">
+                        <label class="form-check-label" for="teamwork">
+                          Làm việc teamwork
+                        </label>
+                    </div>
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio" name="flexRadio1" id="work-alone" value="Làm việc 1 mình" checked>
+                        <label class="form-check-label" for="work-alone">
+                          Làm việc 1 mình
+                        </label>
+                    </div>
+                    <div class="form-check col-6">
+                      <input class="form-check-input" type="radio" name="flexRadio2" id="multi-tasking" value="Multi-tasking">
+                      <label class="form-check-label" for="multi-tasking">
+                        Multi-tasking
+                      </label>
+                    </div>
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio" name="flexRadio2" id="single-tasking" value="Single-tasking" checked>
+                        <label class="form-check-label" for="single-tasking">
+                          Single-tasking
+                        </label>
+                    </div>
+                    <div class="form-check col-6">
+                      <input class="form-check-input" type="radio" name="flexRadio3" id="lyTri" value="Lý trí">
+                      <label class="form-check-label" for="lyTri">
+                        Lý trí
+                      </label>
+                    </div>
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio" name="flexRadio3" id="camXuc" value="Cảm xúc" checked>
+                        <label class="form-check-label" for="camXuc">
+                          Cảm xúc
+                        </label>
+                    </div>
+                    <div class="form-check col-6">
+                      <input class="form-check-input" type="radio" name="flexRadio4" id="huongNoi" value="Hướng nội">
+                      <label class="form-check-label" for="huongNoi">
+                        Hướng nội
+                      </label>
+                    </div>
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio" name="flexRadio4" id="huongNgoai" value="Hướng ngoại" checked>
+                        <label class="form-check-label" for="huongNgoai">
+                          Hướng ngoại
+                        </label>
+                    </div>
+                    <div class="form-check col-6">
+                      <input class="form-check-input" type="radio" name="flexRadio5" id="nghiemTuc" value="Nghiêm túc">
+                      <label class="form-check-label" for="nghiemTuc">
+                        Nghiêm túc
+                      </label>
+                    </div>
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio" name="flexRadio5" id="haiHuoc" value="Hài hước" checked>
+                        <label class="form-check-label" for="haiHuoc">
+                          Hài hước
+                        </label>
+                    </div>
+                    <div class="form-check col-6">
+                      <input class="form-check-input" type="radio" name="flexRadio6" id="thichHanhDong" value="Thích hành động">
+                      <label class="form-check-label" for="thichHanhDong">
+                        Thích hành động
+                      </label>
+                    </div>
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio" name="flexRadio6" id="thichLoiNoi" value="Thích lời nói" checked>
+                        <label class="form-check-label" for="thichLoiNoi">
+                          Thích lời nói
+                        </label>
+                    </div>
+                    <div class="form-check col-6">
+                      <input class="form-check-input" type="radio" name="flexRadio7" id="naoNhiet" value="Thích nơi đông người náo nhiệt">
+                      <label class="form-check-label" for="naoNhiet">
+                        Thích nơi đông người náo nhiệt
+                      </label>
+                    </div>
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio" name="flexRadio7" id="yenTinh" value="Thích yên tĩnh một mình" checked>
+                        <label class="form-check-label" for="yenTinh">
+                          Thích yên tĩnh một mình
+                        </label>
+                    </div>
+                    <div class="form-check col-6">
+                      <input class="form-check-input" type="radio" name="flexRadio8" id="chiaSe" value="Chia sẻ thể hiện cảm xúc">
+                      <label class="form-check-label" for="chiaSe">
+                        Chia sẻ thể hiện cảm xúc
+                      </label>
+                    </div>
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio" name="flexRadio8" id="riengTu" value="Riêng tư, khép kín" checked>
+                        <label class="form-check-label" for="riengTu">
+                          Riêng tư, khép kín
+                        </label>
+                    </div>
+                    <div class="form-check col-6">
+                      <input class="form-check-input" type="radio" name="flexRadio9" id="nheNhang" value="Nhẹ nhàng tinh tế">
+                      <label class="form-check-label" for="nheNhang">
+                        Nhẹ nhàng tinh tế
+                      </label>
+                    </div>
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio" name="flexRadio9" id="thangThan" value="Thẳng thắn góp ý" checked>
+                        <label class="form-check-label" for="thangThan">
+                          Thẳng thắn góp ý
+                        </label>
+                    </div>
+                    <div class="form-check col-6">
+                      <input class="form-check-input" type="radio" name="flexRadio10" id="khuonMau" value="Khuôn mẫu">
+                      <label class="form-check-label" for="khuonMau">
+                        Khuôn mẫu
+                      </label>
+                    </div>
+                    <div class="form-check col-6">
+                        <input class="form-check-input" type="radio" name="flexRadio10" id="sangTao" value="Sáng tạo" checked>
+                        <label class="form-check-label" for="sangTao">
+                          Sáng tạo
+                        </label>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="cauHoi7" class="mb-3">7. Đã là con người thì ắt sẽ có những nỗi sợ. Trong thị trường chứng khoán, có 2 nỗi sợ thường được nhắc đến: FOMO (Fear Of Missing Out - Sợ bỏ lỡ cơ hội) và FOBO (Fear Of Better Options - Sợ sẽ có lựa chọn khác tốt hơn). Hãy thử liên tưởng và áp dụng cho trường hợp của riêng bản thân, bạn nghĩ mình dễ bị ảnh hưởng bởi nỗi sợ nào hơn trong cuộc sống và làm sao để khắc phục nó? (Nếu bạn đã đầu tư, thật tuyệt vời nếu cung cấp góc nhìn của bạn đối với thị trường chứng khoán).</label>
-                    <textarea class="form-control" id="cauHoi7" style="height: 100px"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="khamPha5" class="mb-3">5. Câu hỏi tình huống khách quan: “High risk high return” là một thuật ngữ không còn xa lạ với những nhà đầu tư chứng khoán. Nhiều người tin rằng tỷ lệ rủi ro sẽ đi cùng với tỷ suất sinh lời hay càng rủi ro thì sẽ càng có nhiều lợi nhuận. Cũng như trong thực tế cuộc sống, việc chúng ta đương đầu với nguy hiểm, thách thức sẽ đem đến một thành công vang dội. Hãy nêu quan điểm của bạn về vấn đề trên.</label>
+                <textarea class="form-control" id="khamPha5" style="height: 100px"></textarea>
+                <div class="noti-error" id="noti-khamPha5">
+                  <p></p>
                 </div>
             </div>
+            </div>
             <div class="cauHoiPhanBan">
-                <h2>III) Câu Hỏi Phân Ban</h2>
+                <h2>IV) Câu Hỏi Phân Ban</h2>
                 <div class="row">
                     <div class="col-6">
                         <select class="form-select" aria-label="Default select example" id="select-nv1">
@@ -278,56 +465,88 @@
                         <div class="mb-3">
                             <label for="cauHoiBCM1" class="mb-3">1. Bạn nghĩ như thế nào về nhận định "Chứng khoán là cờ bạc".</label>
                             <textarea class="form-control" id="cauHoiBCM1" style="height: 100px"></textarea>
+                            <div class="noti-error" id="noti-cauHoiBCM1">
+                              <p></p>
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="cauHoiBCM2" class="mb-3">2. Bạn nghĩ sao về câu nói “Bull markets are born on pessimism, grow on skepticism, mature on optimism and die on euphoria.” - John Templeton</label>
                             <textarea class="form-control" id="cauHoiBCM2" style="height: 100px"></textarea>
+                            <div class="noti-error" id="noti-cauHoiBCM2">
+                              <p></p>
+                            </div>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="v-pills-bdn">
                         <div class="mb-3">
                             <label for="cauHoiBDN1" class="mb-3">1. Hãy cho biết những tố chất cần có để trở thành 1 thành viên của Ban Đối ngoại? Bạn làm gì để trau dồi các tố chất này?</label>
                             <textarea class="form-control" id="cauHoiBDN1" style="height: 100px"></textarea>
+                            <div class="noti-error" id="noti-cauHoiBDN1">
+                              <p></p>
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="cauHoiBDN2" class="mb-3">2. Nếu toàn câu lạc bộ kỳ vọng Ban Đối ngoại phải tìm được 200 triệu tài trợ để lo cho các chi phí của chương trình nhưng Ban chỉ kiếm được 140 triệu thì bạn nghĩ Ban Đối ngoại nên giải quyết như thế nào?</label>
                             <textarea class="form-control" id="cauHoiBDN2" style="height: 100px"></textarea>
+                            <div class="noti-error" id="noti-cauHoiBDN2">
+                              <p></p>
+                            </div>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="v-pills-bns">
                         <div class="mb-3">
                             <label for="cauHoiBNS1" class="mb-3">1. Bạn nghĩ bản thân có yếu tố nào phù hợp với Ban Nhân sự? Là thành viên Ban Nhân sự, bạn sẽ làm gì để những thành viên có tính cách trái ngược nhau làm việc hòa hợp với nhau?</label>
                             <textarea class="form-control" id="cauHoiBNS1" style="height: 100px"></textarea>
+                            <div class="noti-error" id="noti-cauHoiBNS1">
+                              <p></p>
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="cauHoiBNS2" class="mb-3">2. Bạn nghĩ gì về quan điểm sau: “Nếu như câu lạc bộ của bạn là một chiếc xe, hãy mời những người thích hợp lên xe và những người không thích hợp xuống xe”</label>
                             <textarea class="form-control" id="cauHoiBNS2" style="height: 100px"></textarea>
+                            <div class="noti-error" id="noti-cauHoiBNS2">
+                              <p></p>
+                            </div>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="v-pills-btt">
                         <div class="mb-3">
                             <label for="cauHoiBTT1" class="mb-3">1. Bạn có nhận xét gì về Bộ nhận diện của đợt tuyển nhân sự năm nay? Nếu được thay đổi, bạn sẽ chỉnh sửa những gì?</label>
                             <textarea class="form-control" id="cauHoiBTT1" style="height: 100px"></textarea>
+                            <div class="noti-error" id="noti-cauHoiBTT1">
+                              <p></p>
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="cauHoiBTT2" class="mb-3">2. Bạn hãy chọn và trả lời 1 trong 2 câu hỏi sau: "Bạn hãy gửi 3 tấm hình tự chụp (hoặc tự design) mà bạn ưng ý nhất và viết content cho 3 tấm hình này" hoặc "Hãy sáng tạo 2 câu thành ngữ, tục ngữ về chủ đề chứng khoán (Ví dụ: Mua mã này, hô mã nọ)"</label>
                             <textarea class="form-control" id="cauHoiBTT2" style="height: 100px"></textarea>
+                            <div class="noti-error" id="noti-cauHoiBTT2">
+                              <p></p>
+                            </div>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="v-pills-tcsk">
                         <div class="mb-3">
                             <label for="cauHoiTCSK1" class="mb-3">1. Theo bạn, Ban Tổ chức sự kiện sẽ thực hiện những công việc gì? Để làm tốt những công việc đó, bạn nghĩ Ban Tổ chức sự kiện sẽ gồm những thành viên có tính cách và tố chất như thế nào?</label>
                             <textarea class="form-control" id="cauHoiTCSK1" style="height: 100px"></textarea>
+                            <div class="noti-error" id="noti-cauHoiTCSK1">
+                              <p></p>
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="cauHoiTCSK2" class="mb-3">2. Giả sử bạn là thành viên ban Tổ chức sự kiện và bạn đang phải lên kế hoạch cho đêm Gala Night, theo bạn đâu sẽ những tiêu chí để khán giả đánh giá sự chuyên nghiệp của Ban Tổ chức?</label>
                             <textarea class="form-control" id="cauHoiTCSK2" style="height: 100px"></textarea>
+                            <div class="noti-error" id="noti-cauHoiTCSK2">
+                              <p></p>
+                            </div>
                         </div>
                       </div>
-                      <div class="btn-container text-center">
-                        <button type="button" class="btn btn-success submit">
-                          <a href="#" target="_blank">SUBMIT</a>
-                        </button>
+                    </div>
+
+                    <div class="btn-container text-center">
+                      <button class="btn btn-success submit" id="submit">Submit</button>
+                      <div class="noti-error mt-5" id="noti-fullForm">
+                        <p></p>
                       </div>
                     </div>
                   </div>
@@ -346,6 +565,9 @@
         <p>Powered by  <i class="fa fa-heart"></i>  from SeSC</p>
       </div>
     </footer>
+    <div class="overlayModal">
+    </div>
+    <div class="loader"></div>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -385,8 +607,28 @@
         }
       };
     </script>
-    
 
+    <!-- Axios Librabry -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+
+    <!-- SheetDb Librabry -->
+    <script src="//sheetdb.io/api/js"></script>
+    
+    <!-- import model js -->
+    <script src="/script/models/validity.js"></script>
+    <script src="/script/models/thongTinCaNhan.js"></script>
+    <script src="/script/models/hieuBietChungVeCLB.js"></script>
+    <script src="/script/models/khamPhaBanThan.js"></script>
+    <script src="/script/models/cauHoiPhanBan.js"></script>
+    <script src="/script/models/application.js"></script>
+    <!-- <script src="/script/models/service.js"></script> -->
+
+    <!-- import main js -->
     <script src="/script/main/main_recruitForm.js"></script>
   </body>
 </html>
