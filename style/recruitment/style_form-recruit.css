@@ -269,3 +269,9 @@ body {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 992px) {
+  .form h2 {
+    font-size: 20px;
+  }
+}
