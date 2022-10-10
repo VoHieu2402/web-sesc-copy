@@ -85,6 +85,13 @@ body {
     /* transform: translateX(260px); */
     text-align: center;
   }
+
+  .sticky .navbar-brand {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .carousel h2 {
     padding-top: 110px;
   }
