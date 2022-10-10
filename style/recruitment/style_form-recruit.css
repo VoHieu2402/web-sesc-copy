@@ -82,7 +82,7 @@ body {
 
 @media (max-width: 992px) {
   .header .navbar-brand {
-    transform: translateX(260px);
+    /* transform: translateX(260px); */
     text-align: center;
   }
   .carousel h2 {

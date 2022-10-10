@@ -59,8 +59,9 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- justify-content-end -->
             <div
-              class="collapse navbar-collapse justify-content-end navMenu"
+              class="collapse navbar-collapse navMenu"
               id="navbarNav"
             >
               <ul class="navbar-nav">
@@ -596,14 +597,14 @@
       window.onscroll = function () {
         if (window.pageYOffset >= 300) {
           header.classList.add("sticky");
-          document.querySelector("body > section > div > h2").style.display =
-            "none";
+          // document.querySelector("body > section > div > h2").style.display =
+          //   "none";
           imgLogo.src = "/SeSC/Logo_small.jpg";
           imgLogo.style = "width: 50%; border-radius: 100px;";
         } else {
           header.classList.remove("sticky");
-          document.querySelector("body > section > div > h2").style.display =
-            "block";
+          // document.querySelector("body > section > div > h2").style.display =
+          //   "block";
           imgLogo.src = "/SeSC/Logo_small_trans.png";
           imgLogo.style = "width: 70%;";
         }
