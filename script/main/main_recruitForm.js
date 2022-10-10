@@ -1,3 +1,11 @@
+getInputById("btn-dropDownMenu").onclick = () => {
+    if(document.querySelector("body > header > div > div").style.display == "none") {
+        document.querySelector("body > header > div > div").style.display = "block";
+    } else {
+        document.querySelector("body > header > div > div").style.display = "none";
+    }
+}
+
 document.getElementById("select-nv1").onchange = () => {
     resetCauTraLoiPhanBan("nv1");
     hienThiCauHoi();

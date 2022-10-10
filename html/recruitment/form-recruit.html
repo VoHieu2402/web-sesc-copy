@@ -56,6 +56,7 @@
               aria-controls="navbarNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              id="btn-dropDownMenu"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -605,8 +606,15 @@
           imgLogo.style = "width: 50%; border-radius: 100px;";
         } else {
           header.classList.remove("sticky");
-          document.querySelector("body > header > div > div").style.display =
+
+          if(document.getElementById("navbarNav").className == "navbar-collapse justify-content-end navMenu collapse show") {
+            document.querySelector("body > header > div > div").style.display =
+            "none";
+          } else {
+            document.querySelector("body > header > div > div").style.display =
             "block";
+          }
+
           imgLogo.src = "/SeSC/Logo_small_trans.png";
           imgLogo.style = "width: 70%;";
         }

@@ -42,7 +42,7 @@ body {
   content: "";
   width: 0%;
   height: 2px;
-  background: #03a54c;
+  background-color: beige;
   display: block;
   margin: auto;
   transition: 0.5s;
