@@ -58,6 +58,14 @@ body {
   font-size: 15px;
 }
 
+.header .title {
+  text-align: center;
+}
+
+.header .title h2 {
+  color: beige;
+}
+
 /* responsive */
 .header .show {
   background-color: green;
@@ -66,7 +74,7 @@ body {
 
 /* ----- Carousel ----- */
 .carousel {
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/SeSC/green-building.jpg);

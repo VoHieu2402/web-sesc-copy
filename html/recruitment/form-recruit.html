@@ -97,11 +97,14 @@
             </div>
           </div>
         </nav>
+        <div class="title">
+          <h2>ĐƠN TUYỂN NHÂN SỰ VÒNG 1</h2>
+        </div>
       </div>
     </header>
     <section class="carousel">
       <div class="container">
-        <h2>ĐƠN TUYỂN NHÂN SỰ VÒNG 1</h2>
+        <!-- <h2>ĐƠN TUYỂN NHÂN SỰ VÒNG 1</h2> -->
       </div>
     </section>
     <section class="form">
@@ -596,14 +599,14 @@
       window.onscroll = function () {
         if (window.pageYOffset >= 300) {
           header.classList.add("sticky");
-          // document.querySelector("body > section > div > h2").style.display =
-          //   "none";
+          document.querySelector("body > header > div > div").style.display =
+            "none";
           imgLogo.src = "/SeSC/Logo_small.jpg";
           imgLogo.style = "width: 50%; border-radius: 100px;";
         } else {
           header.classList.remove("sticky");
-          // document.querySelector("body > section > div > h2").style.display =
-          //   "block";
+          document.querySelector("body > header > div > div").style.display =
+            "block";
           imgLogo.src = "/SeSC/Logo_small_trans.png";
           imgLogo.style = "width: 70%;";
         }
