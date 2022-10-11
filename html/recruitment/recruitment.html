@@ -109,7 +109,7 @@
         </div>
       </div>
     </header>
-    <section class="carousel">
+    <section class="main-carousel">
       <div class="container"></div>
     </section>
     <section class="intro-quote">
@@ -153,7 +153,7 @@
           </div>
           <div class="col-sm-6 col-md-3">
             <div class="item_container">
-              <h3 class="num">1000</h3>
+              <h3 class="num">800</h3>
               <p>Cựu Thành Viên</p>
             </div>
           </div>
@@ -280,7 +280,6 @@
           <h3>5 Ban Chức Năng</h3>
         </div>
         <div class="tab-dpt text-center">
-          <!-- xóa flex-column để hiện hàng ngang -->
           <div class="nav nav-pills me-3 justify-content-center" role="tablist">
             <button
               class="nav-link active border border-dark rounded text-dark mx-2"
@@ -318,13 +317,12 @@
               Ban Tổ Chức Sự Kiện
             </button>
           </div>
-          <!-- mỗi tab-pane phải cần có id để button trỏ tới nó; aria là các thuộc tính cho người khiếm thị; có thể xóa các thuộc tính như type, role -->
           <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active text-center" id="v-pills-bcm">
               <img src="/SeSC/BCM.jpg" alt="Ban Chuyên Môn" />
               <div class="text-content">
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-md-12 col-lg-4">
                     <div class="item">
                       <h2>Mô Tả Công Việc</h2>
                       <div class="text">
@@ -361,7 +359,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-md-12 col-lg-4">
                     <div class="item">
                       <h2>Yêu Cầu</h2>
                       <div class="text">
@@ -395,7 +393,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-md-12 col-lg-4">
                     <div class="item">
                       <h2>Quyền Lợi</h2>
                       <div class="text">
@@ -436,6 +434,133 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div class="carousel-containers">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active text-success">
+                      <div class="carousel-item-content">
+                        <h2>Mô Tả Công Việc</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Xuất bản nội dung cho các bài phân tích học thuật
+                                đăng trên các nền tảng mạng xã hội
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row my-3">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Chuẩn bị nội dung training học thuật cho CLB</p>
+                            </div>
+                          </div>
+                          <div class="row my-3">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Soạn đề thi cho Cuộc thi Sinh viên với Tài chính
+                                FSC
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-success">
+                      <div class="carousel-item-content">
+                        <h2>Yêu Cầu</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Có thái độ cầu tiến, ham học hỏi
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row my-5">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Có niềm đam mê đối với lĩnh vực Tài chính - Chứng khoán</p>
+                            </div>
+                          </div>
+                          <div class="row my-5">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Có kỹ năng viết và khả năng chịu áp lực
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-success">
+                      <div class="carousel-item-content">
+                        <h2>Quyền Lợi</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Được tham gia các buổi training chuyên sâu về lĩnh vực Tài chính - Chứng khoán
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Được hỗ trợ kết nối, mở rộng networking với những anh chị kinh nghiệm trong lĩnh vực Tài chính - Chứng khoán</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Cùng những giá trị cộng hưởng khác khi tham gia CLB tại trường ĐH Ngoại Thương
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                    <i class="fa fa-angle-right"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -562,6 +687,133 @@
                   </div>
                 </div>
               </div>
+              <div class="carousel-containers">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active text-success">
+                      <div class="carousel-item-content">
+                        <h2>Mô Tả Công Việc</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Xuất bản nội dung cho các bài phân tích học thuật
+                                đăng trên các nền tảng mạng xã hội
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row my-3">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Chuẩn bị nội dung training học thuật cho CLB</p>
+                            </div>
+                          </div>
+                          <div class="row my-3">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Soạn đề thi cho Cuộc thi Sinh viên với Tài chính
+                                FSC
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-success">
+                      <div class="carousel-item-content">
+                        <h2>Yêu Cầu</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Có thái độ cầu tiến, ham học hỏi
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row my-5">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Có niềm đam mê đối với lĩnh vực Tài chính - Chứng khoán</p>
+                            </div>
+                          </div>
+                          <div class="row my-5">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Có kỹ năng viết và khả năng chịu áp lực
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-success">
+                      <div class="carousel-item-content">
+                        <h2>Quyền Lợi</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Được tham gia các buổi training chuyên sâu về lĩnh vực Tài chính - Chứng khoán
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Được hỗ trợ kết nối, mở rộng networking với những anh chị kinh nghiệm trong lĩnh vực Tài chính - Chứng khoán</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Cùng những giá trị cộng hưởng khác khi tham gia CLB tại trường ĐH Ngoại Thương
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                    <i class="fa fa-angle-right"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="tab-pane fade" id="v-pills-bns">
               <img src="/SeSC/BNS.jpg" alt="Ban Nhân Sự" />
@@ -682,6 +934,133 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div class="carousel-containers">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active text-success">
+                      <div class="carousel-item-content">
+                        <h2>Mô Tả Công Việc</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Xuất bản nội dung cho các bài phân tích học thuật
+                                đăng trên các nền tảng mạng xã hội
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row my-3">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Chuẩn bị nội dung training học thuật cho CLB</p>
+                            </div>
+                          </div>
+                          <div class="row my-3">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Soạn đề thi cho Cuộc thi Sinh viên với Tài chính
+                                FSC
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-success">
+                      <div class="carousel-item-content">
+                        <h2>Yêu Cầu</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Có thái độ cầu tiến, ham học hỏi
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row my-5">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Có niềm đam mê đối với lĩnh vực Tài chính - Chứng khoán</p>
+                            </div>
+                          </div>
+                          <div class="row my-5">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Có kỹ năng viết và khả năng chịu áp lực
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-success">
+                      <div class="carousel-item-content">
+                        <h2>Quyền Lợi</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Được tham gia các buổi training chuyên sâu về lĩnh vực Tài chính - Chứng khoán
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Được hỗ trợ kết nối, mở rộng networking với những anh chị kinh nghiệm trong lĩnh vực Tài chính - Chứng khoán</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Cùng những giá trị cộng hưởng khác khi tham gia CLB tại trường ĐH Ngoại Thương
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                    <i class="fa fa-angle-right"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -809,6 +1188,133 @@
                   </div>
                 </div>
               </div>
+              <div class="carousel-containers">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active text-success">
+                      <div class="carousel-item-content">
+                        <h2>Mô Tả Công Việc</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Xuất bản nội dung cho các bài phân tích học thuật
+                                đăng trên các nền tảng mạng xã hội
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row my-3">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Chuẩn bị nội dung training học thuật cho CLB</p>
+                            </div>
+                          </div>
+                          <div class="row my-3">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Soạn đề thi cho Cuộc thi Sinh viên với Tài chính
+                                FSC
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-success">
+                      <div class="carousel-item-content">
+                        <h2>Yêu Cầu</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Có thái độ cầu tiến, ham học hỏi
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row my-5">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Có niềm đam mê đối với lĩnh vực Tài chính - Chứng khoán</p>
+                            </div>
+                          </div>
+                          <div class="row my-5">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Có kỹ năng viết và khả năng chịu áp lực
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-success">
+                      <div class="carousel-item-content">
+                        <h2>Quyền Lợi</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Được tham gia các buổi training chuyên sâu về lĩnh vực Tài chính - Chứng khoán
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Được hỗ trợ kết nối, mở rộng networking với những anh chị kinh nghiệm trong lĩnh vực Tài chính - Chứng khoán</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Cùng những giá trị cộng hưởng khác khi tham gia CLB tại trường ĐH Ngoại Thương
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                    <i class="fa fa-angle-right"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="tab-pane fade" id="v-pills-tcsk">
               <img src="/SeSC/TCSK.jpg" alt="Ban TCSK" />
@@ -926,6 +1432,133 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div class="carousel-containers">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active text-success">
+                      <div class="carousel-item-content">
+                        <h2>Mô Tả Công Việc</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Xuất bản nội dung cho các bài phân tích học thuật
+                                đăng trên các nền tảng mạng xã hội
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row my-3">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Chuẩn bị nội dung training học thuật cho CLB</p>
+                            </div>
+                          </div>
+                          <div class="row my-3">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Soạn đề thi cho Cuộc thi Sinh viên với Tài chính
+                                FSC
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-success">
+                      <div class="carousel-item-content">
+                        <h2>Yêu Cầu</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Có thái độ cầu tiến, ham học hỏi
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row my-5">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Có niềm đam mê đối với lĩnh vực Tài chính - Chứng khoán</p>
+                            </div>
+                          </div>
+                          <div class="row my-5">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Có kỹ năng viết và khả năng chịu áp lực
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-success">
+                      <div class="carousel-item-content">
+                        <h2>Quyền Lợi</h2>
+                        <div class="text text-left">
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Được tham gia các buổi training chuyên sâu về lĩnh vực Tài chính - Chứng khoán
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>Được hỗ trợ kết nối, mở rộng networking với những anh chị kinh nghiệm trong lĩnh vực Tài chính - Chứng khoán</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-2">
+                              <i class="fab fa-angellist"></i>
+                            </div>
+                            <div class="col-10">
+                              <p>
+                                Cùng những giá trị cộng hưởng khác khi tham gia CLB tại trường ĐH Ngoại Thương
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                    <i class="fa fa-angle-right"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
               </div>
             </div>

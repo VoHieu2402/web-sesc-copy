@@ -72,8 +72,8 @@ body {
   transition: 0.1s;
 }
 
-/* ----- Carousel ----- */
-.carousel {
+/* ----- main-carousel ----- */
+.main-carousel {
   height: 40vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -84,7 +84,7 @@ body {
   color: beige;
 }
 
-.carousel h2 {
+.main-carousel h2 {
   padding-top: 170px;
 }
 
@@ -211,7 +211,7 @@ body {
 
 /* ----- Number ----- */
 .numbers {
-  margin: 200px 0px;
+  margin: 100px 0px;
   background-image: url("/SeSC/[BCM]\ Background.png");
   text-align: center;
   padding: 60px 0px;
@@ -500,6 +500,53 @@ body {
   color: #03a54c;
 }
 
+.jd-departments .carousel-containers {
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: none;
+}
+
+.jd-departments .carousel {
+  height: 500px;
+  width: 700px;
+}
+
+.jd-departments .carousel-control-next,
+.carousel-control-prev {
+  color: #03a54c !important;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.jd-departments .carousel-indicators button {
+  background-color: #03a54c !important;
+}
+
+.jd-departments .carousel-item {
+  height: 500px;
+}
+
+.jd-departments .carousel-item-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.jd-departments .carousel .text {
+  text-align: left !important;
+}
+
+.jd-departments .carousel-item-content h2 {
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.jd-departments .carousel-item-content .text p {
+  /* color: black; */
+}
+
 /*-------footer----*/
 .footer {
   width: 100%;
@@ -557,16 +604,24 @@ body {
     transform: translateX(-50%);
   }
 
-  .carousel h2 {
+  .main-carousel h2 {
     padding-top: 110px;
   }
 
-  .carousel {
+  .main-carousel {
     height: 60vh;
   }
 
   .form h2 {
     font-size: 20px;
+  }
+
+  .jd-departments .tab-pane .text-content {
+    display: none;
+  }
+
+  .jd-departments .tab-pane .carousel-containers {
+    display: block;
   }
 }
 
@@ -583,15 +638,23 @@ body {
     transform: translateX(-50%);
   }
 
-  .carousel h2 {
+  .main-carousel h2 {
     padding-top: 110px;
   }
 
-  .carousel {
+  .main-carousel {
     height: 40vh;
   }
 
   .form h2 {
     font-size: 20px;
+  }
+
+  .jd-departments .tab-pane .text-content {
+    display: none;
+  }
+
+  .jd-departments .tab-pane .carousel-containers {
+    display: block;
   }
 }
