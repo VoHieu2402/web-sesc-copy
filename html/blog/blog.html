@@ -1,130 +1,221 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Securities Studying Club - Never Back Down</title>
-  
-  <!-- gg fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <head>
+    <title>Blog - CLB Tài chính - Chứng khoán SeSC</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-  <!-- css files -->
-  <link rel="stylesheet" href="/style/home/style.css">
-  <link rel="stylesheet" href="/style/blog/style_blog.css">
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XE0JP45WDF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XE0JP45WDF');
-  </script>
-</head>
-<body>
-<div id="preloader"></div>
-<!--------Header----------------->
-<section class ="sub-header">
-  <nav>
-    <a href="index.html"><img src="/SeSC/Logo_small_trans.png" target="_blank"></a>
-    <div class="nav-links" id="navLinks">
-      <ion-icon class="fa fa-times" name="close-outline" onclick="hideMenu()"></ion-icon>
-      <ul>
-        <li class="nav"><a href="/html/home/index.html">HOME</a></li>
-        <li class="nav"><a href="/html/aboutUs/about.html">ABOUT US</a></li>
-        <li class="nav"><a href="/html/fsc/fsc.html">FSC</a></li>
-        <li class="nav"><a href="/html/blog/blog.html">BLOG</a></li>
-        <li class="nav"><a href="/html/recruitment/recruitment.html">RECRUITMENT</a></li> 
-        <li class="nav"><a href="/html/contact/contact.html">CONTACT</a></li>   
-      </ul>   
-    </div>
-    <ion-icon class="fa fa-bars" name="menu-outline" onclick="showMenu()"></ion-icon>
-  </nav>
-  <div class="text-box">
-    <h1>Analytics & Reports</h1>
-</section>
-<!--------Blog----------------->
-<section class="blog-content">
-  <div class="row">
-    <div class="blog-left">
-      <img src="/SeSC/Finance-1.jpg">
-      <h2>Analytics & Reports</h2>
-      <p>We investigate the equity market timing hypothesis of capital structure in the case of Vietnam. The two questions that we aim to answer in this paper are: Whether or not Vietnamese listed non-financial firms’ capital structures are affected by equity market timing? If they are indeed affected, does the effect last throughout the years, or is it only a short-term effect? The results suggest that capital structure is the cumulative outcomes of past market timing attempts for Vietnamese non-financial firms. Our findings are consistent with the theory proposed by Baker & Wurgler (2002), the pioneering research whose model have been widely adopted in numerous studies around the world in this field.</p>
-      <br>
-      <p>We investigate the equity market timing hypothesis of capital structure in the case of Vietnam. The two questions that we aim to answer in this paper are: Whether or not Vietnamese listed non-financial firms’ capital structures are affected by equity market timing? If they are indeed affected, does the effect last throughout the years, or is it only a short-term effect? The results suggest that capital structure is the cumulative outcomes of past market timing attempts for Vietnamese non-financial firms. Our findings are consistent with the theory proposed by Baker & Wurgler (2002), the pioneering research whose model have been widely adopted in numerous studies around the world in this field.</p>
-      <br>
-      <p>We investigate the equity market timing hypothesis of capital structure in the case of Vietnam. The two questions that we aim to answer in this paper are: Whether or not Vietnamese listed non-financial firms’ capital structures are affected by equity market timing? If they are indeed affected, does the effect last throughout the years, or is it only a short-term effect? The results suggest that capital structure is the cumulative outcomes of past market timing attempts for Vietnamese non-financial firms. Our findings are consistent with the theory proposed by Baker & Wurgler (2002), the pioneering research whose model have been widely adopted in numerous studies around the world in this field.</p>
-      <br>
-      <p>We investigate the equity market timing hypothesis of capital structure in the case of Vietnam. The two questions that we aim to answer in this paper are: Whether or not Vietnamese listed non-financial firms’ capital structures are affected by equity market timing?</p>
-      <div class="comment-box">
-        <h3>Leave a comment</h3>
-        <form class="comment-form" action="">
-          <input type="name" placeholder="Enter Name">
-          <input type="email" placeholder="Enter Email">
-          <textarea rows="5" placeholder="Your comment"></textarea>
-          <button type="submit" class="hero-btn green-btn">POST COMMENT</button>
-        </form>
+    <!-- gg fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600;700&family=Pacifico&family=Quicksand:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="shortcut icon" type="image/png" href="/SeSC/LogoSeSC.png"/>
+
+    <!-- css files -->
+    <link rel="stylesheet" href="/style/home/style.css">
+    <link rel="stylesheet" href="/style/blog/style_blog.css" />
+  </head>
+  <body>
+    <!--------Header----------------->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/html/home/index.html">
+              <img src="/SeSC/Logo_small_trans.png" target="_blank" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="btn-dropDownMenu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end navMenu"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="/html/home/index.html"
+                    >TRANG CHỦ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/aboutUs/about.html"
+                    >VỀ SeSC</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/fsc/fsc.html">FSC</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/blog/blog.html">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/recruitment/recruitment.html"
+                    >TUYỂN NHÂN SỰ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/contact/contact.html"
+                    >LIÊN HỆ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="title">
+          <h2>SeSC BLOG</h2>
+        </div>
       </div>
-    </div>
-    <div class="blog-right">
-      <h3>Categories</h3>
-      <div>
-        <span>Industry Analytics</span>
-        <span>17</span>
+    </header>
+    <section class="carousel">
+      <div class="container"></div>
+    </section>
+    <!--------Blog----------------->
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="/SeSC/Finance-1.jpg">
+          <h2>Analytics & Reports</h2>
+          <p>We investigate the equity market timing hypothesis of capital structure in the case of Vietnam. The two questions that we aim to answer in this paper are: Whether or not Vietnamese listed non-financial firms’ capital structures are affected by equity market timing? If they are indeed affected, does the effect last throughout the years, or is it only a short-term effect? The results suggest that capital structure is the cumulative outcomes of past market timing attempts for Vietnamese non-financial firms. Our findings are consistent with the theory proposed by Baker & Wurgler (2002), the pioneering research whose model have been widely adopted in numerous studies around the world in this field.</p>
+          <br>
+          <p>We investigate the equity market timing hypothesis of capital structure in the case of Vietnam. The two questions that we aim to answer in this paper are: Whether or not Vietnamese listed non-financial firms’ capital structures are affected by equity market timing? If they are indeed affected, does the effect last throughout the years, or is it only a short-term effect? The results suggest that capital structure is the cumulative outcomes of past market timing attempts for Vietnamese non-financial firms. Our findings are consistent with the theory proposed by Baker & Wurgler (2002), the pioneering research whose model have been widely adopted in numerous studies around the world in this field.</p>
+          <br>
+          <p>We investigate the equity market timing hypothesis of capital structure in the case of Vietnam. The two questions that we aim to answer in this paper are: Whether or not Vietnamese listed non-financial firms’ capital structures are affected by equity market timing? If they are indeed affected, does the effect last throughout the years, or is it only a short-term effect? The results suggest that capital structure is the cumulative outcomes of past market timing attempts for Vietnamese non-financial firms. Our findings are consistent with the theory proposed by Baker & Wurgler (2002), the pioneering research whose model have been widely adopted in numerous studies around the world in this field.</p>
+          <br>
+          <p>We investigate the equity market timing hypothesis of capital structure in the case of Vietnam. The two questions that we aim to answer in this paper are: Whether or not Vietnamese listed non-financial firms’ capital structures are affected by equity market timing?</p>
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form class="comment-form" action="">
+              <input type="name" placeholder="Enter Name">
+              <input type="email" placeholder="Enter Email">
+              <textarea rows="5" placeholder="Your comment"></textarea>
+              <button type="submit" class="hero-btn green-btn">POST COMMENT</button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Categories</h3>
+          <div>
+            <span>Industry Analytics</span>
+            <span>17</span>
+          </div>
+          <div>
+            <span>Weekly Feeds</span>
+            <span>109</span>
+          </div>
+          <div>
+            <span>Analyst Reports</span>
+            <span>21</span>
+          </div>
+          <div>
+            <span>Financial Facts</span>
+            <span>32</span>
+          </div>
+          <div>
+            <span>Learning materials</span>
+            <span>67</span>
+          </div>
+          <div>
+            <span>Career Orientations</span>
+            <span>7</span>
+          </div>
+        </div>
       </div>
-      <div>
-        <span>Weekly Feeds</span>
-        <span>109</span>
+    </section>
+    <!--------Footer--------------->
+    <footer class="footer">
+      <div class="container">
+        <h4>CLB Tài chính - Chứng khoán SeSC</h4>
+        <p>Thành lập vào ngày 01/04/2010, CLB Tài chính - Chứng khoán SeSC là CLB đầu tiên và duy nhất của ĐH Ngoại Thương TPHCM hoạt động trong lĩnh vực Tài chính - Chứng khoán. Với sứ mệnh phổ cập tri thức tài chính cho cộng đồng, Chúng Tôi cam kết không ngừng nâng cao chất lượng hoạt động, tiếp tục là bệ phóng cho các tài năng trong lĩnh vực Tài chính - Chứng khoán trong nhiều năm nữa.</p>
+        <div class="icons">
+          <a href="https://www.facebook.com/CaulacboChungKhoanSeSC" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/sesc-ftu2/mycompany/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.tiktok.com/@fsc.10" target="_blank"><i class="fa-brands fa-tiktok"></i></a></ion-icon>
+        </div>
+        <p>Powered by  <i class="fa fa-heart"></i>  from SeSC</p>
       </div>
-      <div>
-        <span>Analyst Reports</span>
-        <span>21</span>
-      </div>
-      <div>
-        <span>Financial Facts</span>
-        <span>32</span>
-      </div>
-      <div>
-        <span>Learning materials</span>
-        <span>67</span>
-      </div>
-      <div>
-        <span>Career Orientations</span>
-        <span>7</span>
-      </div>
-    </div>
-  </div>
-</section>
-<!--------Footer--------------->
-<section class="footer">
-  <h4>About Us</h4>
-  <p>Established on April 1, 2010, SeSC (Securities Studying Club) is currently the only club at FTU2 operating in the field of finance and securities.<br> This is an environment for students with the same passion to learn and share knowledge with each other.</p>
-  <div class="icons">
-    <a href="https://www.facebook.com/CaulacboChungKhoanSeSC" target="_blank"><ion-icon class="fa" name="logo-facebook"></ion-icon></a>
-    <a href="https://www.linkedin.com/company/sesc-ftu2/mycompany/" target="_blank"><ion-icon class="fa" name="logo-linkedin"></ion-icon></a>
-    <a href="https://www.tiktok.com/@fsc.10" target="_blank"><ion-icon class="fa" name="logo-tiktok"></ion-icon></a></ion-icon>
-  </div>
-  <p>Powered by  <ion-icon class="fa" name="heart-outline"></ion-icon>  from SeSC</p>
-</section>
-<!--------Javacrpt for Toggle Mobile Menu------->
-  <script>
-    var navLinks = document.getElementById("navLinks")
-    function showMenu(){navLinks.style.right="0";}
-    function hideMenu(){navLinks.style.right="-200px";}
-  </script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
-    window.addEventListener("load", function(){
-    setInterval(pippo, 1000)});
-    function pippo(){
-      var preloader = document.getElementById("preloader");
-      document.body.removeChild(preloader);
-    }
-  </script>
-</body>
-</body>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Sticky effect -->
+    <script>
+      var header = document.getElementsByClassName("header")[0];
+      var carousel = document.getElementsByClassName("carousel")[0];
+      var imgLogo = document.querySelector("body > header > div > nav > div > a > img");
+
+      window.onscroll = function () {
+        if (window.pageYOffset >= 300) {
+          header.classList.add("sticky");
+          document.querySelector("body > header > div > div").style.display =
+            "none";
+          imgLogo.src = "/SeSC/Logo_small.jpg";
+          imgLogo.style = "width: 50%; border-radius: 100px;";
+        } else {
+          header.classList.remove("sticky");
+
+          if(document.getElementById("navbarNav").className == "navbar-collapse justify-content-end navMenu collapse show") {
+            document.querySelector("body > header > div > div").style.display =
+            "none";
+          } else {
+            document.querySelector("body > header > div > div").style.display =
+            "block";
+          }
+
+          imgLogo.src = "/SeSC/Logo_small_trans.png";
+          imgLogo.style = "width: 70%;";
+        }
+      };
+    </script>
+  </body>
 </html>
 
 

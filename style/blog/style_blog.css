@@ -1,0 +1,190 @@
+/* ----- Header & NavMenu ----- */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+}
+
+.header .navbar-brand img {
+  width: 100%;
+}
+
+.header button.navbar-toggler {
+  z-index: 1000 !important;
+  background-color: green;
+}
+
+.header button.navbar-toggler span {
+  color: white !important;
+}
+
+.header .navMenu ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header .navMenu ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: beige;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.header .navMenu ul li:hover::after {
+  width: 100%;
+}
+
+.header .navMenu ul li a {
+  color: beige;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.header .title {
+  text-align: center;
+}
+
+.header .title h2 {
+  color: beige;
+}
+
+/* responsive */
+.header .show {
+  background-color: green;
+  transition: 0.1s;
+}
+
+/* ----- Carousel ----- */
+.carousel {
+  height: 40vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/SeSC/green-building.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: beige;
+}
+
+.carousel h2 {
+  padding-top: 170px;
+}
+
+/* sticky effect */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background-color: green;
+  height: 15vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 1;
+}
+
+.sticky .navMenu ul li::after {
+  background-color: beige;
+}
+
+.sticky .container {
+  height: 100%;
+}
+
+.sticky .container .navbar {
+  height: 100%;
+}
+
+/*-------footer----*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: rgba(15, 16, 15, 0.906);
+}
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: beige;
+}
+.footer p {
+  color: beige;
+  font-size: 14px;
+}
+.icons a {
+  color: #03a54c;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 20px;
+}
+
+.icons a:hover {
+  color: beige;
+}
+
+.icons {
+  margin-bottom: 20px;
+}
+
+.footer p i {
+  color: #03a54c;
+}
+
+/* responsive */
+/* big screens when zoomed in */
+@media only screen and (max-width: 992px) and (max-height: 700px) {
+  .header .navbar-brand {
+    /* transform: translateX(260px); */
+    text-align: center;
+  }
+
+  .sticky {
+    display: none;
+  }
+
+  .sticky .navbar-brand {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .carousel h2 {
+    padding-top: 110px;
+  }
+
+  .carousel {
+    height: 60vh;
+  }
+}
+
+/* small screens */
+@media only screen and (max-width: 992px) and (min-height: 700px) {
+  .header .navbar-brand {
+    /* transform: translateX(260px); */
+    text-align: center;
+  }
+
+  .sticky .navbar-brand {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .carousel h2 {
+    padding-top: 110px;
+  }
+
+  .carousel {
+    height: 40vh;
+  }
+}

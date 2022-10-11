@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  position: relative;
+}
+
 /* ----- Header & NavMenu ----- */
 .header {
   position: absolute;
@@ -17,7 +21,7 @@
 }
 
 .header .navbar-brand img {
-  width: 70%;
+  width: 100%;
 }
 
 .header button.navbar-toggler {
@@ -38,7 +42,7 @@
   content: "";
   width: 0%;
   height: 2px;
-  background: #03a54c;
+  background-color: beige;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -54,6 +58,14 @@
   font-size: 15px;
 }
 
+.header .title {
+  text-align: center;
+}
+
+.header .title h2 {
+  color: beige;
+}
+
 /* responsive */
 .header .show {
   background-color: green;
@@ -62,7 +74,7 @@
 
 /* ----- Carousel ----- */
 .carousel {
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/SeSC/green-building.jpg);
@@ -76,20 +88,6 @@
   padding-top: 170px;
 }
 
-@media (max-width: 992px) {
-  .header .navbar-brand {
-    transform: translateX(260px);
-    text-align: center;
-  }
-  .carousel h2 {
-    padding-top: 110px;
-  }
-
-  .carousel {
-    height: 40vh;
-  }
-}
-
 /* sticky effect */
 .sticky {
   position: fixed;
@@ -100,6 +98,7 @@
   background-color: green;
   height: 15vh;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 1;
 }
 
 .sticky .navMenu ul li::after {
@@ -507,4 +506,61 @@
 
 .footer p i {
   color: #03a54c;
+}
+
+/* responsive */
+/* big screens when zoomed in */
+@media only screen and (max-width: 992px) and (max-height: 700px) {
+  .header .navbar-brand {
+    /* transform: translateX(260px); */
+    text-align: center;
+  }
+
+  .sticky {
+    display: none;
+  }
+
+  .sticky .navbar-brand {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .carousel h2 {
+    padding-top: 110px;
+  }
+
+  .carousel {
+    height: 60vh;
+  }
+
+  .form h2 {
+    font-size: 20px;
+  }
+}
+
+/* small screens */
+@media only screen and (max-width: 992px) and (min-height: 700px) {
+  .header .navbar-brand {
+    /* transform: translateX(260px); */
+    text-align: center;
+  }
+
+  .sticky .navbar-brand {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .carousel h2 {
+    padding-top: 110px;
+  }
+
+  .carousel {
+    height: 40vh;
+  }
+
+  .form h2 {
+    font-size: 20px;
+  }
 }

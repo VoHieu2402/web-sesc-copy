@@ -1,5 +1,13 @@
+document.getElementById("btn-dropDownMenu").onclick = () => {
+  if(document.querySelector("body > header > div > div").style.display == "none") {
+      document.querySelector("body > header > div > div").style.display = "block";
+  } else {
+      document.querySelector("body > header > div > div").style.display = "none";
+  }
+}
+
 // Set the date we're counting down to
-var countDownDate = new Date("Oct 10, 2022 13:30:00").getTime();
+var countDownDate = new Date("Oct 20, 2022 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

@@ -1,9 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
+
+body {
+  position: relative;
+}
+
 h1 {
   font-size: 36px;
   font-weight: 600;
@@ -29,47 +35,7 @@ nav {
 nav img {
   width: 150px;
 }
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/SeSC/green-building.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-.nav-links {
-  flex: 2;
-  padding: 0 2%;
-  display: inline;
-}
-.nav-links ul {
-  padding-top: 0cm;
-  text-align: right;
-}
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 20px 20px;
-  position: relative;
-}
-.nav-links ul li a {
-  color: beige;
-  text-decoration: none;
-  font-size: 15px;
-}
-.nav-links ul li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #03a54c;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-.nav-links ul li:hover::after {
-  width: 100%;
-}
+
 .text-box {
   width: 90%;
   color: beige;
@@ -266,46 +232,8 @@ nav .fa {
     font-size: 24px;
   }
 }
-/*-------footer----*/
-.footer {
-  width: 100%;
-  text-align: center;
-  padding: 30px 0;
-  background-color: rgba(15, 16, 15, 0.906);
-}
-.footer h4 {
-  margin-bottom: 25px;
-  margin-top: 20px;
-  font-weight: 600;
-  color: beige;
-}
-.footer p {
-  color: beige;
-}
-.icons .fa {
-  color: #03a54c;
-  margin: 0 13px;
-  cursor: pointer;
-  padding: 18px 0;
-}
-.fa {
-  color: #03a54c;
-}
 
 /*-----------About Us Page--------*/
-.sub-header {
-  height: 50vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/SeSC/green-building.jpg);
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  color: beige;
-}
-.sub-header h1 {
-  margin-bottom: 200px;
-}
 .about-us {
   width: 80%;
   margin: auto;
@@ -406,14 +334,7 @@ nav .fa {
 .comment-form button {
   margin: 15px 0;
 }
-@media (max-width: 700px) {
-  .sub-header h1 {
-    font-size: 40px;
-  }
-  .header h1 {
-    font-size: 40px;
-  }
-}
+
 /*-------Contact us page----------*/
 .location {
   width: 80%;
@@ -472,13 +393,4 @@ nav .fa {
   .contact-col button {
     margin-left: 10%;
   }
-}
-/*-------Preloader----------*/
-#preloader {
-  background: rgb(255, 255, 255) url(/SeSC/preloader.gif) no-repeat center
-    center;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 9999;
 }
