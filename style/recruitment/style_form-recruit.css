@@ -21,7 +21,7 @@ body {
 }
 
 .header .navbar-brand img {
-  width: 70%;
+  width: 100%;
 }
 
 .header button.navbar-toggler {
@@ -96,13 +96,9 @@ body {
   width: 100%;
   color: white;
   background-color: green;
-  height: 20vh;
+  height: 15vh;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   z-index: 1;
-}
-
-.sticky .container {
-  height: 100%;
 }
 
 .sticky .navMenu ul li::after {
@@ -272,10 +268,15 @@ body {
   }
 }
 
+/* big screens when zoomed in */
 @media only screen and (max-width: 992px) and (max-height: 700px) {
   .header .navbar-brand {
     /* transform: translateX(260px); */
     text-align: center;
+  }
+
+  .sticky {
+    display: none;
   }
 
   .sticky .navbar-brand {
@@ -297,6 +298,7 @@ body {
   }
 }
 
+/* small screens */
 @media only screen and (max-width: 992px) and (min-height: 700px) {
   .header .navbar-brand {
     /* transform: translateX(260px); */
