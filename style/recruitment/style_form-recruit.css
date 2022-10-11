@@ -105,7 +105,7 @@ body {
   }
 
   .carousel {
-    height: 40vh;
+    height: 60vh;
   }
 }
 
@@ -252,6 +252,14 @@ body {
 }
 
 /* loader */
+.loader-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 101;
+  transform: translate(-50%, -50%);
+}
+
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
@@ -260,10 +268,6 @@ body {
   height: 120px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
-  position: fixed;
-  top: 45%;
-  left: 45%;
-  z-index: 101;
 }
 
 /* Safari */

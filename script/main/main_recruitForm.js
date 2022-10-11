@@ -269,7 +269,7 @@ function getCauHoiPhanBan() {
 }
 
 document.getElementsByClassName("overlayModal")[0].style.display = "none";
-document.getElementsByClassName("loader")[0].style.display = "none";
+document.getElementsByClassName("loader-container")[0].style.display = "none";
 
 getInputById("submit").onclick = () => {
     getThongTinCaNhan();
@@ -278,11 +278,11 @@ getInputById("submit").onclick = () => {
     getCauHoiPhanBan();
     let isValid = true;
     document.getElementsByClassName("overlayModal")[0].style.display = "block";
-    document.getElementsByClassName("loader")[0].style.display = "block";
+    document.getElementsByClassName("loader-container")[0].style.display = "block";
 
     SheetDB.read('https://sheetdb.io/api/v1/bnjw1767itnei', {sheet: "Sheet1"}).then(function(result){
         document.getElementsByClassName("overlayModal")[0].style.display = "none";
-        document.getElementsByClassName("loader")[0].style.display = "none";
+        document.getElementsByClassName("loader-container")[0].style.display = "none";
         // Null Check
         // getThongTinCaNhan
         isValid &= validity.nullCheck(thongTinCaNhan.hoTen,"noti-hoTen","(*) Vui lòng nhập họ tên");
