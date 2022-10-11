@@ -115,7 +115,7 @@ body {
 
 /* ----- SeSC Quote ----- */
 .intro-quote {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .intro-quote .right {
@@ -178,16 +178,6 @@ body {
   background-position: right;
 }
 
-/* .numbers .heading {
-  margin-bottom: 40px;
-}
-
-.numbers .heading h2 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #daf2da;
-} */
-
 .numbers .number h3 {
   font-size: 70px;
   font-weight: 900;
@@ -195,7 +185,7 @@ body {
 }
 
 .numbers .number p {
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 600;
   color: #daf2da;
 }
