@@ -34,11 +34,11 @@ function resetCauHoiPhanBan() {
     let tcskQues = document.getElementById("v-pills-tcsk");
 
     // reset button
-    bcm.className = "nav-link border border-dark rounded text-dark mx-2 disabled";
-    bdn.className = "nav-link border border-dark rounded text-dark mx-2 disabled";
-    bns.className = "nav-link border border-dark rounded text-dark mx-2 disabled";
-    btt.className = "nav-link border border-dark rounded text-dark mx-2 disabled";
-    tcsk.className = "nav-link border border-dark rounded text-dark mx-2 disabled";
+    bcm.className = "nav-link border border-dark rounded text-dark disabled";
+    bdn.className = "nav-link border border-dark rounded text-dark disabled";
+    bns.className = "nav-link border border-dark rounded text-dark disabled";
+    btt.className = "nav-link border border-dark rounded text-dark disabled";
+    tcsk.className = "nav-link border border-dark rounded text-dark disabled";
 
     // reset cauhoi
     bcmQues.className = "tab-pane fade";

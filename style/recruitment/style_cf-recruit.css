@@ -6,8 +6,12 @@
   scroll-behavior: smooth;
 }
 
+.main-body .container {
+  overflow: hidden;
+}
+
 .thank-img {
-  width: 30%;
+  height: 50vh;
   animation: swinging ease-in-out 2s infinite alternate;
 }
 @keyframes swinging {
@@ -26,12 +30,12 @@ p {
 }
 
 p i {
-  color: #03a54c;
+  color: green;
 }
 
 button.backTo {
   margin-top: 50px;
-  background-color: #03a54c !important;
+  background-color: green !important;
   color: white !important;
   transition: 0.3s;
   border-radius: 50px;
@@ -40,5 +44,5 @@ button.backTo {
 
 button.backTo:hover {
   background-color: white !important;
-  color: #03a54c !important;
+  color: green !important;
 }
