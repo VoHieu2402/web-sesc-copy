@@ -625,6 +625,19 @@ body {
   .jd-departments .tab-pane .carousel-containers {
     display: block;
   }
+
+  .jd-departments .carousel {
+    height: 500px;
+    width: 700px;
+  }
+
+  .jd-departments .carousel-item {
+    height: 500px;
+  }
+
+  .jd-departments .carousel .text p {
+    font-size: calc(8px + 0.9vw);
+  }
 }
 
 /* small screens */
