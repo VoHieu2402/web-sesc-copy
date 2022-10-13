@@ -540,6 +540,10 @@ body {
   text-align: left !important;
 }
 
+.jd-departments .carousel .text p {
+  font-size: calc(2px + 0.9vw);
+}
+
 .jd-departments .carousel-item-content h2 {
   margin-bottom: 40px;
   font-weight: 600;
