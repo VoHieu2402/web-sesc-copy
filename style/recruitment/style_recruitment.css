@@ -509,7 +509,7 @@ body {
 
 .jd-departments .carousel {
   height: 500px;
-  width: 700px;
+  width: 70vh;
 }
 
 .jd-departments .carousel-control-next,
@@ -541,10 +541,6 @@ body {
 .jd-departments .carousel-item-content h2 {
   margin-bottom: 40px;
   font-weight: 600;
-}
-
-.jd-departments .carousel-item-content .text p {
-  /* color: black; */
 }
 
 /*-------footer----*/
