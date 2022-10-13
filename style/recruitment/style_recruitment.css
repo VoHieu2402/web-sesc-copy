@@ -508,7 +508,9 @@ body {
 }
 
 .jd-departments .carousel {
-  height: 80vh;
+  /* height: 500px;
+  width: 700px; */
+  height: 70vh;
   width: 70vw;
 }
 
@@ -524,7 +526,7 @@ body {
 }
 
 .jd-departments .carousel-item {
-  height: 80vh;
+  height: 70vh;
 }
 
 .jd-departments .carousel-item-content {
