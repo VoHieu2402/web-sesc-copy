@@ -213,11 +213,13 @@
   margin-bottom: 0px;
 }
 .testimonial {
+  /* height: 120vh; */
   background: #03a54c;
   text-align: center;
   padding: 30px 30px 50px;
   margin: 0 15px 100px;
   position: relative;
+  height: 500px;
 }
 .testimonial:before,
 .testimonial:after {
@@ -253,7 +255,7 @@
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: -120px;
+  bottom: -130px;
 }
 .testimonial .pic {
   display: inline-block;
@@ -262,12 +264,12 @@
   box-shadow: 0 0 2px 2px gainsboro;
   overflow: hidden;
   z-index: 1;
-  height: 150px;
+  height: 130px;
   position: relative;
 }
 .testimonial .pic img {
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%; */
+  height: 100%;
 }
 .testimonial .title {
   font-size: 15px;
@@ -276,11 +278,19 @@
   text-transform: capitalize;
   margin: 0 0 5px 0;
 }
-.testimonial .post {
+.testimonials .testimonial .testimonial-content .post {
   display: block;
   font-size: 14px;
   color: black;
 }
+.owl-theme {
+  height: 750px !important;
+}
+
+.owl-theme .owl-wrapper-outer {
+  height: 700px !important;
+}
+
 .owl-theme .owl-controls {
   margin-top: 60px;
 }
@@ -395,5 +405,34 @@
 
   .form h2 {
     font-size: 20px;
+  }
+}
+
+/* small screens horizental */
+@media only screen and (min-width: 700px) {
+  .numbers .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 700px) {
+  .numbers .col-sm-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 770px) {
+  .owl-theme {
+    height: 850px !important;
+  }
+
+  .owl-theme .owl-wrapper-outer {
+    height: 800px !important;
+  }
+
+  .testimonial {
+    height: 600px;
   }
 }
