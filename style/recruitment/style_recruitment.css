@@ -328,13 +328,14 @@ body {
 
 .main-concept .body .left .background {
   height: 100%;
-  width: 90%;
+  width: 100%;
   position: absolute;
   top: -5px;
   left: 12px;
-  background-image: url("/SeSC/chart-vnindex.PNG");
+  background-image: url("/SeSC/chart-vnindex.PNG"),
+    url("/SeSC/ss3-removebg-preview.png");
   background-attachment: fixed;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   z-index: 0;
   border-radius: 5px;
 }
@@ -628,11 +629,11 @@ body {
   }
 
   .jd-departments .carousel {
-    height: 500px;
+    height: 550px;
   }
 
   .jd-departments .carousel-item {
-    height: 500px;
+    height: 550px;
   }
 
   .jd-departments .carousel .text p {
