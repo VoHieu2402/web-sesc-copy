@@ -252,7 +252,7 @@ body {
   margin: 50px 0px;
 }
 
-.main-concept .description #ichimoku {
+.main-concept .description .highlightText {
   color: green;
   font-weight: 600;
   font-size: 25px;
@@ -282,7 +282,7 @@ body {
   top: 50%;
   left: -20px;
   transform: translateY(-50%);
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .main-concept .body .item .order span {
@@ -316,6 +316,7 @@ body {
   position: relative;
   animation-duration: 2s;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .main-concept .body .left img.main-img {
@@ -323,30 +324,6 @@ body {
   border-radius: 20px;
   animation-duration: 2s;
   position: relative;
-  z-index: 5;
-}
-
-.main-concept .body .left .background {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: -5px;
-  left: 12px;
-  background-image: url("/SeSC/chart-vnindex.PNG"),
-    url("/SeSC/ss3-removebg-preview.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: 0;
-  border-radius: 5px;
-}
-
-.main-concept .body .left .usdt {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  position: absolute;
-  bottom: 20px;
-  left: -20px;
-  width: 25%;
-  z-index: 10;
 }
 
 .main-concept button {
@@ -672,5 +649,12 @@ body {
 
   .jd-departments .tab-pane .carousel-containers {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main-concept .body .right,
+  .left {
+    width: 100%;
   }
 }

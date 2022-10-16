@@ -178,6 +178,12 @@ body {
   color: green !important;
 }
 
+.form .cauHoiPhanBan .tai-day {
+  text-decoration: none;
+  color: green;
+  font-weight: 700;
+}
+
 /*-------footer----*/
 .footer {
   width: 100%;

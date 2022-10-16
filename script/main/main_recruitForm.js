@@ -257,15 +257,10 @@ function getCauHoiPhanBan() {
     cauHoiPhanBan.nv1 = document.querySelector("body > section.form > div > div.cauHoiPhanBan > div.row > div:nth-child(1) > select").value;
     cauHoiPhanBan.nv2 = document.querySelector("body > section.form > div > div.cauHoiPhanBan > div.row > div:nth-child(2) > select").value;
     cauHoiPhanBan.bcm1 = getInputById("cauHoiBCM1").value;
-    cauHoiPhanBan.bcm2 = getInputById("cauHoiBCM2").value;
     cauHoiPhanBan.bdn1 = getInputById("cauHoiBDN1").value;
-    cauHoiPhanBan.bdn2 = getInputById("cauHoiBDN2").value;
     cauHoiPhanBan.bns1 = getInputById("cauHoiBNS1").value;
-    cauHoiPhanBan.bns2 = getInputById("cauHoiBNS2").value;
     cauHoiPhanBan.btt1 = getInputById("cauHoiBTT1").value;
-    cauHoiPhanBan.btt2 = getInputById("cauHoiBTT2").value;
     cauHoiPhanBan.tcsk1 = getInputById("cauHoiTCSK1").value;
-    cauHoiPhanBan.tcsk2 = getInputById("cauHoiTCSK2").value;
 }
 
 document.getElementsByClassName("overlayModal")[0].style.display = "none";
@@ -344,23 +339,18 @@ getInputById("submit").onclick = () => {
         isValid &= getInputById("select-nv1").value!="Nguyện Vọng 1";
         if(cauHoiPhanBan.nv1=="bcm" || cauHoiPhanBan.nv2=="bcm") {
             isValid &= validity.nullCheck(cauHoiPhanBan.bcm1,"noti-cauHoiBCM1","(*) Vui lòng điền câu trả lời");
-            isValid &= validity.nullCheck(cauHoiPhanBan.bcm2,"noti-cauHoiBCM2","(*) Vui lòng điền câu trả lời");
         }
         if(cauHoiPhanBan.nv1=="bdn" || cauHoiPhanBan.nv2=="bdn") {
             isValid &= validity.nullCheck(cauHoiPhanBan.bdn1,"noti-cauHoiBDN1","(*) Vui lòng điền câu trả lời");
-            isValid &= validity.nullCheck(cauHoiPhanBan.bdn2,"noti-cauHoiBDN2","(*) Vui lòng điền câu trả lời");
         }
         if(cauHoiPhanBan.nv1=="bns" || cauHoiPhanBan.nv2=="bns") {
             isValid &= validity.nullCheck(cauHoiPhanBan.bns1,"noti-cauHoiBNS1","(*) Vui lòng điền câu trả lời");
-            isValid &= validity.nullCheck(cauHoiPhanBan.bns2,"noti-cauHoiBNS2","(*) Vui lòng điền câu trả lời");
         }
         if(cauHoiPhanBan.nv1=="btt" || cauHoiPhanBan.nv2=="btt") {
             isValid &= validity.nullCheck(cauHoiPhanBan.btt1,"noti-cauHoiBTT1","(*) Vui lòng điền câu trả lời");
-            isValid &= validity.nullCheck(cauHoiPhanBan.btt2,"noti-cauHoiBTT2","(*) Vui lòng điền câu trả lời");
         }
         if(cauHoiPhanBan.nv1=="tcsk" || cauHoiPhanBan.nv2=="tcsk") {
             isValid &= validity.nullCheck(cauHoiPhanBan.tcsk1,"noti-cauHoiTCSK1","(*) Vui lòng điền câu trả lời");
-            isValid &= validity.nullCheck(cauHoiPhanBan.tcsk2,"noti-cauHoiTCSK2","(*) Vui lòng điền câu trả lời");
         }
 
 
@@ -412,6 +402,13 @@ getInputById("submit").onclick = () => {
                         "Tính cách 9": application.khamPhaBanThan.kp4C9,
                         "Tính cách 10": application.khamPhaBanThan.kp4C10,
                         "Câu hỏi tình huống khách quan: “High risk high return” là một thuật ngữ không còn xa lạ với những nhà đầu tư chứng khoán. Nhiều người tin rằng tỷ lệ rủi ro sẽ đi cùng với tỷ suất sinh lời hay càng rủi ro thì sẽ càng có nhiều lợi nhuận. Cũng như trong thực tế cuộc sống, việc chúng ta đương đầu với nguy hiểm, thách thức sẽ đem đến một thành công vang dội. Hãy nêu quan điểm của bạn về vấn đề trên.": application.khamPhaBanThan.kp5,
+
+                        // cauHoiPhanBan
+                        "BCM": application.cauHoiPhanBan.bcm1,
+                        "BDN": application.cauHoiPhanBan.bdn1,
+                        "BNS": application.cauHoiPhanBan.bns1,
+                        "BTT": application.cauHoiPhanBan.btt1,
+                        "TCSK": application.cauHoiPhanBan.tcsk1,
                     }
                 }
             )
