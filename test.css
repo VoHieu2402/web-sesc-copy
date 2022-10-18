@@ -1,0 +1,149 @@
+.coreteam .wrap {
+  /* background-color: ; */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-perspective: 2500px;
+  perspective: 2500px;
+  -webkit-perspective-origin: 100% 50%;
+  perspective-origin: 100% 50%;
+}
+.coreteam .wrap .girl {
+  margin-left: 0;
+  bottom: 0%;
+  top: 10%;
+  position: absolute;
+  /* border-radius: 10px; */
+}
+.coreteam .wrap .girl .description {
+  font-weight: 700;
+  color: #13be6d;
+  text-shadow: 0 1px 0 #ededed, 0 2px 0 #dbdbdb, 0 3px 0 #c8c8c8,
+    0 4px 0 #b6b6b6, 0 5px 0 #a4a4a4, 0 0 5px rgba(230, 139, 139, 0.05),
+    0 -1px 3px rgba(230, 139, 139, 0.2), 0 9px 9px rgba(230, 139, 139, 0.3),
+    0 12px 12px rgba(230, 139, 139, 0.3), 0 15px 15px rgba(230, 139, 139, 0.3);
+}
+.coreteam .wrap .girl img {
+  height: 80vh;
+  border: #13be6d 10px solid;
+  /* border-radius: 10px; */
+}
+.coreteam .wrap .list {
+  width: 80%;
+  height: 150vh;
+  overflow-x: hidden;
+  /* webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg); */
+  transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+  margin: 0 0 0 200px;
+  padding: 150px 100px 500px 0;
+  scrollbar-width: none;
+}
+.coreteam .wrap .list::-webkit-scrollbar {
+  display: none;
+}
+.coreteam .wrap .list::-webkit-scrollbar {
+  display: none;
+}
+.coreteam .wrap .list::-webkit-scrollbar {
+  display: block;
+}
+.coreteam .wrap .list .item {
+  /* filter: grayscale(100%); */
+  width: 30%;
+  height: 400px;
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+}
+.coreteam .wrap .list .item::after {
+  content: "";
+  position: absolute;
+  z-index: 150;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3960c8e1-d90e-4e60-8522-816b41b93892/d84vq6v-5985a860-c6c3-453c-a0ae-e80e5e5abf06.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM5NjBjOGUxLWQ5MGUtNGU2MC04NTIyLTgxNmI0MWI5Mzg5MlwvZDg0dnE2di01OTg1YTg2MC1jNmMzLTQ1M2MtYTBhZS1lODBlNWU1YWJmMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G2ljZtN3fPs4NhvF-fCGxl_97BA4w8kvt_qGyJH1RNI");
+  opacity: 0.1;
+}
+.coreteam .wrap .list .item .img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 1px 1px 50px 0 #000;
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  z-index: 99999;
+  position: relative;
+}
+button {
+  border: 2px solid black;
+  padding: 10px;
+  z-index: 9999;
+  top: -300px;
+  position: relative;
+  display: inline;
+  margin-left: -60px;
+  outline: none;
+}
+@media only screen and (max-width: 768px) {
+  .girl {
+    background: url(https://res.cloudinary.com/malaika/image/upload/v1564328867/Gabriella-Wilde-PNG-HD_1_2.png)
+      no-repeat cover fixed;
+  }
+  h1 {
+    display: none;
+  }
+  .coreteam .wrap .list .item {
+    width: 56%;
+  }
+}
+
+.coreteam .wrap .list .item .description {
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  right: 50%;
+  border-radius: 10px;
+  background-color: #13be6d;
+  transform: translate(50%, 0);
+}
+
+.coreteam .wrap .list .item h2 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1em;
+  width: 100%;
+  text-shadow: 0 1px 0 #ededed, 0 2px 0 #dbdbdb, 0 3px 0 #c8c8c8,
+    0 4px 0 #b6b6b6, 0 5px 0 #a4a4a4, 0 0 5px rgba(230, 139, 139, 0.05),
+    0 -1px 3px rgba(230, 139, 139, 0.2), 0 9px 9px rgba(230, 139, 139, 0.3),
+    0 12px 12px rgba(230, 139, 139, 0.3), 0 15px 15px rgba(230, 139, 139, 0.3);
+}
+
+.coreteam .wrap .list .item h4 {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1em;
+  width: 100%;
+  text-shadow: 0 1px 0 #b6b6b6, 0 2px 0 #a4a4a4,
+    0 0 5px rgba(230, 139, 139, 0.05), 0 -1px 3px rgba(230, 139, 139, 0.2),
+    0 9px 9px rgba(230, 139, 139, 0.3), 0 12px 12px rgba(230, 139, 139, 0.3),
+    0 15px 15px rgba(230, 139, 139, 0.3);
+}
+
+.coreteam .wrap .social-media {
+  text-decoration: none;
+  color: #13be6d;
+}
+
+.coreteam .wrap .social-media i {
+  transition: 0.3s;
+}
+
+.coreteam .wrap .social-media:hover i {
+  transform: scale(1.5);
+}
