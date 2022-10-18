@@ -123,7 +123,7 @@
   color: #daf2da;
 }
 
-/*-------coreteam1----*/
+/*-------coreteam----*/
 /* Heading */
 .heading-text {
   text-align: center;
@@ -203,153 +203,167 @@
   margin-bottom: 20px;
 }
 
-.coreteam1 .wrap {
-  /* background-color: ; */
+/* ---------activities--------- */
+.activities {
+  margin: 100px 0;
+}
+#timeline {
   width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 10px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+#timeline:before {
+  content: "";
+  width: 3px;
   height: 100%;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  -webkit-perspective: 2500px;
-  perspective: 2500px;
-  -webkit-perspective-origin: 100% 50%;
-  perspective-origin: 100% 50%;
-}
-.coreteam1 .wrap .girl {
-  margin-left: 0;
-  bottom: 0%;
-  top: 10%;
+  background: green;
+  left: 50%;
+  top: 0;
   position: absolute;
-  /* border-radius: 10px; */
 }
-.coreteam1 .wrap .girl .description {
-  font-weight: 700;
-  color: #13be6d;
-  text-shadow: 0 1px 0 #ededed, 0 2px 0 #dbdbdb, 0 3px 0 #c8c8c8,
-    0 0 5px rgba(230, 139, 139, 0.05), 0 -1px 3px rgba(230, 139, 139, 0.2),
-    0 9px 9px rgba(230, 139, 139, 0.3);
+#timeline:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
 }
-.coreteam1 .wrap .girl img {
-  height: 80vh;
-  border: #13be6d 10px solid;
-  /* border-radius: 10px; */
-}
-.coreteam1 .wrap .list {
-  width: 80%;
-  height: 150vh;
-  overflow-x: hidden;
-  /* webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg); */
-  transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
-  margin: 0 0 0 200px;
-  padding: 150px 100px 500px 0;
-  scrollbar-width: none;
-}
-.coreteam1 .wrap .list::-webkit-scrollbar {
-  display: none;
-}
-.coreteam1 .wrap .list::-webkit-scrollbar {
-  display: none;
-}
-.coreteam1 .wrap .list::-webkit-scrollbar {
-  display: block;
-}
-.coreteam1 .wrap .list .item {
-  /* filter: grayscale(100%); */
-  width: 30%;
-  height: 400px;
-  margin: 20px;
-  display: inline-block;
+#timeline .timeline-item {
   position: relative;
+  height: 500px;
 }
-.coreteam1 .wrap .list .item::after {
+#timeline .timeline-item .timeline-icon {
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -23px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#timeline .timeline-item .timeline-icon svg {
+  position: relative;
+  top: 14px;
+  left: 14px;
+}
+#timeline .timeline-item .timeline-content {
+  width: 45%;
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#timeline .timeline-item .timeline-content h2 {
+  font-weight: 600 !important;
+  padding: 15px;
+  background: green;
+  color: #fff;
+  margin: -20px -20px 0 -20px;
+  font-weight: 300;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+#timeline .timeline-item .timeline-content .description-text {
+  margin: 20px 0px;
+}
+#timeline .timeline-item .timeline-content:before {
   content: "";
   position: absolute;
-  z-index: 150;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3960c8e1-d90e-4e60-8522-816b41b93892/d84vq6v-5985a860-c6c3-453c-a0ae-e80e5e5abf06.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM5NjBjOGUxLWQ5MGUtNGU2MC04NTIyLTgxNmI0MWI5Mzg5MlwvZDg0dnE2di01OTg1YTg2MC1jNmMzLTQ1M2MtYTBhZS1lODBlNWU1YWJmMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G2ljZtN3fPs4NhvF-fCGxl_97BA4w8kvt_qGyJH1RNI");
-  opacity: 0.1;
+  left: 45%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid green;
 }
-.coreteam1 .wrap .list .item .img {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  box-shadow: 1px 1px 50px 0 #000;
-  -webkit-transform-origin: 100% 50%;
-  -ms-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
-  z-index: 99999;
-  position: relative;
+#timeline .timeline-item .timeline-content.right {
+  float: right;
 }
-button {
-  border: 2px solid black;
-  padding: 10px;
-  z-index: 9999;
-  top: -300px;
-  position: relative;
-  display: inline;
-  margin-left: -60px;
-  outline: none;
+#timeline .timeline-item .timeline-content.right:before {
+  content: "";
+  right: 45%;
+  left: inherit;
+  border-left: 0;
+  border-right: 7px solid green;
 }
-@media only screen and (max-width: 768px) {
-  .girl {
-    background: url(https://res.cloudinary.com/malaika/image/upload/v1564328867/Gabriella-Wilde-PNG-HD_1_2.png)
-      no-repeat cover fixed;
-  }
-  h1 {
-    display: none;
-  }
-  .coreteam1 .wrap .list .item {
-    width: 56%;
-  }
-}
-
-.coreteam1 .wrap .list .item .description {
-  position: absolute;
-  width: 100%;
-  top: 15%;
-  right: 50%;
-  border-radius: 10px;
-  background-color: #13be6d;
-  transform: translate(50%, 0);
-}
-
-.coreteam1 .wrap .list .item h2 {
-  color: #fff;
-  font-size: 20px;
-  line-height: 1em;
-  width: 100%;
-  text-shadow: 0 1px 0 #ededed, 0 2px 0 #dbdbdb, 0 3px 0 #c8c8c8,
-    0 4px 0 #b6b6b6, 0 5px 0 #a4a4a4, 0 0 5px rgba(230, 139, 139, 0.05),
-    0 -1px 3px rgba(230, 139, 139, 0.2), 0 9px 9px rgba(230, 139, 139, 0.3),
-    0 12px 12px rgba(230, 139, 139, 0.3), 0 15px 15px rgba(230, 139, 139, 0.3);
-}
-
-.coreteam1 .wrap .list .item h4 {
-  color: #fff;
-  font-size: 15px;
-  line-height: 1em;
-  width: 100%;
-  text-shadow: 0 1px 0 #b6b6b6, 0 2px 0 #a4a4a4,
-    0 0 5px rgba(230, 139, 139, 0.05), 0 -1px 3px rgba(230, 139, 139, 0.2),
-    0 9px 9px rgba(230, 139, 139, 0.3), 0 12px 12px rgba(230, 139, 139, 0.3),
-    0 15px 15px rgba(230, 139, 139, 0.3);
-}
-
-.coreteam1 .wrap .social-media {
+.btn {
+  padding: 5px 15px;
   text-decoration: none;
-  color: #13be6d;
+  background: transparent;
+  border: 2px solid green;
+  color: black;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  -webkit-box-shadow: 2px 2px 0 green;
+  -moz-box-shadow: 2px 2px 0 green;
+  -ms-box-shadow: 2px 2px 0 green;
+  box-shadow: 2px 2px 0 green;
+}
+.btn:hover {
+  box-shadow: none;
+  top: 2px;
+  left: 2px;
+  -webkit-box-shadow: 2px 2px 0 transparent;
+  -moz-box-shadow: 2px 2px 0 transparent;
+  -ms-box-shadow: 2px 2px 0 transparent;
+  box-shadow: 2px 2px 0 transparent;
 }
 
-.coreteam1 .wrap .social-media i {
-  transition: 0.3s;
-}
-
-.coreteam1 .wrap .social-media:hover i {
-  transform: scale(1.5);
+@media screen and (max-width: 768px) {
+  #timeline {
+    margin: 30px;
+    padding: 0px;
+    width: 90%;
+  }
+  #timeline:before {
+    left: 0;
+  }
+  #timeline .timeline-item .timeline-content {
+    width: 90%;
+    float: right;
+  }
+  #timeline .timeline-item .timeline-content:before,
+  #timeline .timeline-item .timeline-content.right:before {
+    left: 10%;
+    margin-left: -6px;
+    border-left: 0;
+    border-right: 7px solid green;
+  }
+  #timeline .timeline-item .timeline-icon {
+    left: 0;
+  }
 }
 
 /*-------testimonials----*/
@@ -528,6 +542,10 @@ button {
   .form h2 {
     font-size: 20px;
   }
+
+  #timeline .timeline-item {
+    height: 600px;
+  }
 }
 
 /* small screens */
@@ -553,6 +571,10 @@ button {
 
   .form h2 {
     font-size: 20px;
+  }
+
+  #timeline .timeline-item {
+    height: 600px;
   }
 }
 
